@@ -2,4 +2,4 @@
 144 regular maximum
 1024    large maximum
 80  regular percent
-10000   sample size
+100000   sample size
