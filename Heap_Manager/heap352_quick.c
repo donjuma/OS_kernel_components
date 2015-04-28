@@ -44,6 +44,8 @@ static Header base;
 static Header *freep = NULL;
 unsigned totalBlocks = 0;
 unsigned totalFreed = 0;
+struct Header *freeps[9];
+int regular = 1;
 
 void print_debug(Header *freep){
     Header *current = freep;
@@ -138,8 +140,17 @@ Header *increase_heap(int size){
 void *malloc352(int nbytes){
     Header *current, *previous;
     int size;
+    int listIndex;
 
     size = (ALIGN(nbytes) / 16) + 1;
+
+    if ( (size >= 2) && (size <= 10) ){
+        listIndex = size-1;
+    }else {
+        listIndex = 0;
+        regular = 0;
+    }
+    freep = freeps[listIndex];
 
     //Check if base needs to be initialized
     if ((previous = freep) == NULL){
@@ -155,7 +166,7 @@ void *malloc352(int nbytes){
     if ((previous = freep) != NULL){
         previous = freep;
         current = previous->this.next;
-        current = find_first_block(previous, current, size);
+         current = find_first_block(previous, current, size);
 
         if (current){
             //Check to see if we can break block up
@@ -172,15 +183,6 @@ void *malloc352(int nbytes){
         }
     }
 
-    /*
-    else{
-        current = increase_heap(NULL, size);
-        if (!current){
-            return NULL;
-        }
-        base = current;
-    }
-    */
     #ifdef DEBUG
     totalBlocks += current->this.size;
     print_debug(freep);
@@ -189,7 +191,14 @@ void *malloc352(int nbytes){
 
 }
 
+void *combineList(Header *new){
+    new->this.next = freep->this.next;
+    freep->this.next = new;
+}
+
 void *combine(Header *current, Header *new){
+    Header *forward = (new + new->this.size);
+    Header *previous = (current + current->this.size);
 
     if(current->this.next == new + new->this.size){
         new->this.size += current->this.next->this.size;
@@ -213,7 +222,7 @@ Header *findSpot(Header *new){
 
     for (current = freep; !(new > current && new < current->this.next); current = current->this.next){
         if (current >= current->this.next && (new > current || new < current->this.next)){
-            return current;
+            break;
         }
     }
     return current;
@@ -222,12 +231,19 @@ Header *findSpot(Header *new){
 
 void free352(void *ptr){
 
+
     Header *new = (Header *)ptr -1;
     #ifdef DEBUG
     totalFreed += new->this.size;
     #endif
-    Header *spot = findSpot(new);
-    combine(spot, new);
+
+    if (regular){
+        combineList(new);
+    }else{
+        Header *spot = findSpot(new);
+        combine(spot, new);
+        freep = spot;
+    }
 
     #ifdef DEBUG
     print_debug(freep);

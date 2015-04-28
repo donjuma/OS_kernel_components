@@ -69,16 +69,32 @@ void print_debug(Header *freep){
 
 
 Header *find_first_block(Header *previous , Header *current, int size ){
-    while (current && (current->this.size < size) ){
+    Header *smallest;
+    int min = 9999;
+
+
+    for (current = previous->this.next; ; previous = current, current = current->this.next) {
+        if (current->this.size >= size){
+            if (current->this.size == size){
+                return current;
+            }
+            else{
+                if (current->this.size < min){
+                    min = current->this.size;
+                    smallest = current;
+                }
+            }
+        }
         if (current == freep){
+            if (min < 9999){
+                return smallest;
+            }
             if ((current = increase_heap(size)) == NULL){
                 return NULL;
             }
         }
-        previous = current;
-        current = current->this.next;
     }
-    return (current);
+    return current;
 }
 
 void split(Header *current, int size){
@@ -190,6 +206,8 @@ void *malloc352(int nbytes){
 }
 
 void *combine(Header *current, Header *new){
+    Header *forward = (new + new->this.size);
+    Header *previous = (current + current->this.size);
 
     if(current->this.next == new + new->this.size){
         new->this.size += current->this.next->this.size;
@@ -213,7 +231,7 @@ Header *findSpot(Header *new){
 
     for (current = freep; !(new > current && new < current->this.next); current = current->this.next){
         if (current >= current->this.next && (new > current || new < current->this.next)){
-            return current;
+            break;
         }
     }
     return current;
@@ -228,6 +246,7 @@ void free352(void *ptr){
     #endif
     Header *spot = findSpot(new);
     combine(spot, new);
+    freep = spot;
 
     #ifdef DEBUG
     print_debug(freep);
