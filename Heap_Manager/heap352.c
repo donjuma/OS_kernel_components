@@ -69,6 +69,10 @@ void print_debug(Header *freep){
 
 
 Header *find_first_block(Header *previous , Header *current, int size ){
+
+    #ifdef DEBUG
+    printf("Now entering find_first_block!\n");
+    #endif
     while (current && (current->this.size < size) ){
         if (current == freep){
             if ((current = increase_heap(size)) == NULL){
@@ -82,6 +86,10 @@ Header *find_first_block(Header *previous , Header *current, int size ){
 }
 
 void split(Header *current, int size){
+
+    #ifdef DEBUG
+    printf("Now entering split!\n");
+    #endif
     //size = size + HEADER_SIZE;
     current->this.size = current->this.size - size;
     current = current + size;
@@ -96,6 +104,10 @@ void split(Header *current, int size){
 }
 
 Header *increase_heap(int size){
+
+    #ifdef DEBUG
+    printf("Now entering increase_heap!\n");
+    #endif
     Header *current;
     int amount, sizeBytes;
     char *ptr;
@@ -136,6 +148,10 @@ Header *increase_heap(int size){
 }
 
 void *malloc352(int nbytes){
+
+    #ifdef DEBUG
+    printf("Now entering malloc!\n");
+    #endif
     Header *current, *previous;
     int size;
 
@@ -191,6 +207,11 @@ void *malloc352(int nbytes){
 
 void *combine(Header *current, Header *new){
 
+
+    #ifdef DEBUG
+    printf("Now entering combine!\n");
+    #endif
+
     if(current->this.next == new + new->this.size){
         new->this.size += current->this.next->this.size;
         new->this.next = current->this.next->this.next;
@@ -209,6 +230,10 @@ void *combine(Header *current, Header *new){
 }
 
 Header *findSpot(Header *new){
+
+    #ifdef DEBUG
+    printf("Now entering findspot!\n");
+    #endif
     Header *current;
 
     for (current = freep; !(new > current && new < current->this.next); current = current->this.next){
@@ -219,8 +244,12 @@ Header *findSpot(Header *new){
     return current;
 }
 
-
+/*
 void free352(void *ptr){
+
+    #ifdef DEBUG
+    printf("Now entering free352!\n");
+    #endif
 
     Header *new = (Header *)ptr -1;
     #ifdef DEBUG
@@ -232,6 +261,36 @@ void free352(void *ptr){
     #ifdef DEBUG
     print_debug(freep);
     #endif
+}
+*/
+
+
+void free352(void* ap)
+{
+Header*bp,*p;
+bp=(Header*)ap-1;
+for(p=freep;!(bp>p&&bp<p->this.next);p=p->this.next)
+{
+if(p>=p->this.next&&(bp>p||bp<p->this.next))
+{
+break;/* freed block at start or end of arena */
+}
+}
+if(bp+bp->this.size==p->this.next)/* join to upper nbr */
+{
+bp->this.size+=p->this.next->this.size;
+bp->this.next=p->this.next->this.next;
+}
+else
+bp->this.next=p->this.next;
+if(p+p->this.size==bp)/* join to lower nbr */
+{
+p->this.size+=bp->this.size;
+p->this.next=bp->this.next;
+}
+else
+p->this.next=bp;
+freep=p;
 }
 
 int main(){
