@@ -7,6 +7,7 @@
 
 #define PROMPT "$> "
 #define ONE_KB 1024
+char *BIN_LOCATION;
 
 char *homebrew_names[] = {
     "exit",
@@ -50,10 +51,66 @@ int homebrew_pwd(char **arguments){
 }
 
 int homebrew_listf(char **arguments){
+    pid_t pid;
+    pid_t wpid;
+    int status;
+    char path[1024];
+    strcpy(path, BIN_LOCATION);
+    strcat(path, "/listf");
+
+    pid = fork();
+    if (pid < 0) {
+        perror("Error forking child process!\n");
+        exit(1);
+    }
+    else if (pid == 0) {
+        if (execvp(path, arguments) == -1) {
+            // COMMENTED OUT SO THEY DONT KEEP PRINTING FOR COMANDS NOT FOUND
+            //perror("Command Failed after forking process for execution!");
+            printf("No command \"%s\" found.\n", arguments[0]);
+            perror("");
+        }
+        exit(1);
+    }
+    else {
+        //Code Segment from "wait - The Open Group" (opengroup.org)
+        do {
+            wpid = waitpid(pid, &status, WUNTRACED);
+        } while (!WIFEXITED(status) && !WIFSIGNALED(status));
+    }
+
     return 1;
 }
 
 int homebrew_calc(char **arguments){
+    pid_t pid;
+    pid_t wpid;
+    int status;
+    char path[1024];
+    strcpy(path, BIN_LOCATION);
+    strcat(path, "/calc");
+
+    pid = fork();
+    if (pid < 0) {
+        perror("Error forking child process!\n");
+        exit(1);
+    }
+    else if (pid == 0) {
+        if (execvp(path, arguments) == -1) {
+            // COMMENTED OUT SO THEY DONT KEEP PRINTING FOR COMANDS NOT FOUND
+            //perror("Command Failed after forking process for execution!");
+            printf("No command \"%s\" found.\n", arguments[0]);
+            perror("");
+        }
+        exit(1);
+    }
+    else {
+        //Code Segment from "wait - The Open Group" (opengroup.org)
+        do {
+            wpid = waitpid(pid, &status, WUNTRACED);
+        } while (!WIFEXITED(status) && !WIFSIGNALED(status));
+    }
+
     return 1;
 }
 
@@ -71,23 +128,27 @@ int (*homebrew_functions[]) (char **) = {
     &homebrew_calc
 };
 
-int execute(char **args)
-{
-    pid_t pid, wpid;
+int execute(char **args){
+    pid_t pid;
+    pid_t wpid;
     int status;
 
     pid = fork();
-    if (pid == 0) {
-        // Child process
+    if (pid < 0) {
+        perror("Error forking child process!\n");
+        exit(1);
+    }
+    else if (pid == 0) {
         if (execvp(args[0], args) == -1) {
-            perror("Command Failed: %s %s\n", args[0], args);
+            // COMMENTED OUT SO THEY DONT KEEP PRINTING FOR COMANDS NOT FOUND
+            //perror("Command Failed after forking process for execution!");
+            printf("No command \"%s\" found.\n", args[0]);
+            perror("");
         }
-        exit(EXIT_FAILURE);
-    } else if (pid < 0) {
-        // Error forking
-        perror("lsh");
-    } else {
-        // Parent process
+        exit(1);
+    }
+    else {
+        //Code Segment from "wait - The Open Group" (opengroup.org)
         do {
             wpid = waitpid(pid, &status, WUNTRACED);
         } while (!WIFEXITED(status) && !WIFSIGNALED(status));
@@ -148,7 +209,7 @@ char **process_args(char *command){
     int size_of_buffer = ONE_KB;
     int i = 0;
     char *arg;
-    const char delimiters[] = " ,-";
+    char delimiters[] = " ";
     char **arguments = malloc(ONE_KB * sizeof(char*));
     if (!arguments) {
         perror("Unable to allocate space for arguments\n");
@@ -171,34 +232,28 @@ char **process_args(char *command){
     arguments[i] = NULL;
     return arguments;
 }
-/*
-void lsh_loop(void)
-{
-    char *line;
-    char **args;
-    int status;
 
-    do {
-        printf("> ");
-        line = lsh_read_line();
-        args = lsh_split_line(line);
-        status = lsh_execute(args);
-
-        free(line);
-        free(args);
-    } while (status);
-}
-*/
 static void prompt(){
     printf(PROMPT);
     fflush(stdout);
 }
 
+void shell_init(int argc, char **argv){
+    char path[1024];
+    char dest[1024];
+    pid_t pid = getpid();
+    sprintf(path, "/proc/%d/exe", pid);
+    readlink(path, dest, 1024);
+    dest[strlen(dest)-6] = 0;
+    BIN_LOCATION = dest;
+}
+
+
 int main(int argc, char **argv){
-    //lsh_loop();
     char *command;
     char **arguments;
 
+    shell_init(argc, argv);
     while(1){
         prompt();
         command = get_cmd();

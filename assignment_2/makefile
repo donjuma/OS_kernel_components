@@ -8,7 +8,7 @@ shell: shell.c
 	$(CC) -o shell shell.c
 
 listf: listf.c
-	$(CC) -o listf listf.c
+	$(CC) -o listf listf.c -lm
 
 calc: calc.c
 	$(CC) -o calc calc.c
