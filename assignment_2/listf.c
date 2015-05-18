@@ -12,6 +12,7 @@
 #include <langinfo.h>
 #include <stdint.h>
 #include <fcntl.h>
+#include <string.h>
 #include <ctype.h>
 #include <math.h>
 #include <unistd.h>
@@ -86,6 +87,10 @@ int print_files(){
     struct tm time;
     char buffer[1024];
     int max_size = 1;
+    const char *hidden = ".";
+    const char *filename;
+    int hidden_count = 0;
+    int filesize;
 
     getcwd(pathname, sizeof(pathname));
     files = scandir(pathname, &entries, NULL, alphasort);
@@ -97,11 +102,25 @@ int print_files(){
                 //Obtain the maximum digits needed for file size...
                 digits = floor(log10(abs(meta.st_size))) + 1;
                 max_size = MAX(max_size, (int)digits);
+                if (!strncmp(entries[i]->d_name, hidden, strlen(hidden))){
+                    hidden_count++;
+                }
+
             }
         }
-        printf("%d entries found\n",files);
+        printf("%d entries found\n",files-hidden_count);
         for (i=0; i < files; i++){
             if (stat(entries[i]->d_name, &meta) == 0){
+
+                if (!strncmp(entries[i]->d_name, hidden, strlen(hidden))){
+                    continue;
+                }
+
+                if (!(lflag)){
+                    printf("%s ", entries[i]->d_name);
+                    continue;
+                }
+
                 printf("%10.10s %zu", get_perms(meta.st_mode), meta.st_nlink);
                 //printf(" %zu", meta.st_nlink);
 
@@ -118,18 +137,37 @@ int print_files(){
                 else{
                     printf(" %d", meta.st_gid);
                 }
-                printf(" %*d", max_size, (int)meta.st_size);
+                filesize = (int)meta.st_size;
+                if (S_ISDIR(meta.st_mode)) filesize = 4096;
+                printf(" %*d", max_size, filesize);
 
-                //Extract time out of the time struct
-                localtime_r(&meta.st_mtime, &time);
-                strftime(modification_date, sizeof(modification_date), "M%D-%H:%M", &time);
-
-                printf(" %s %s\n", modification_date, entries[i]->d_name);
+                if ((mflag) || (!(cflag + aflag))){
+                    //Extract time out of the time struct
+                    localtime_r(&meta.st_mtime, &time);
+                    strftime(modification_date, sizeof(modification_date), "M%D-%H:%M", &time);
+                    printf(" %s", modification_date);
+                }
+                if (aflag){
+                    //Extract time out of the time struct
+                    localtime_r(&meta.st_atime, &time);
+                    strftime(access_date, sizeof(access_date), "A%D-%H:%M", &time);
+                    printf(" %s", access_date);
+                }
+                if (cflag){
+                    //Extract time out of the time struct
+                    localtime_r(&meta.st_ctime, &time);
+                    strftime(creation_date, sizeof(creation_date), "C%D-%H:%M", &time);
+                    printf(" %s", creation_date);
+                }
+                printf(" %s\n", entries[i]->d_name);
+                //printf(" %s %s %s %s\n", modification_date, access_date, creation_date, entries[i]->d_name);
             }
 
             free (entries[i]);
         }
-
+        if (!(lflag)){
+            printf("\n");
+        }
         free(entries);
     }
 }
