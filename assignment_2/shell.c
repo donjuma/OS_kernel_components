@@ -1,6 +1,8 @@
 #include <sys/wait.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 #include <stdio.h>
 #include <string.h>
 ///#include "homebrew.h"
@@ -8,6 +10,11 @@
 #define PROMPT "$> "
 #define ONE_KB 1024
 char *BIN_LOCATION;
+char out_cmd[1024];
+char in_cmd[1024];
+int in = 0;
+int out = 0;
+char *BIN_PATH;
 
 char *homebrew_names[] = {
     "exit",
@@ -19,7 +26,7 @@ char *homebrew_names[] = {
 
 int homebrew_exit(char **arguments){
     fflush(stdout);
-    exit(EXIT_SUCCESS);
+    _exit(EXIT_SUCCESS);
 }
 
 int homebrew_cd(char **arguments){
@@ -57,31 +64,11 @@ int homebrew_listf(char **arguments){
     char path[1024];
     strcpy(path, BIN_LOCATION);
     strcat(path, "/listf");
-
-    pid = fork();
-    if (pid < 0) {
-        perror("Error forking child process!\n");
-        exit(1);
-    }
-    else if (pid == 0) {
-        if (execvp(path, arguments) == -1) {
-            // COMMENTED OUT SO THEY DONT KEEP PRINTING FOR COMANDS NOT FOUND
-            //perror("Command Failed after forking process for execution!");
-            printf("No command \"%s\" found.\n", arguments[0]);
-            perror("");
-        }
-        exit(1);
-    }
-    else {
-        //Code Segment from "wait - The Open Group" (opengroup.org)
-        do {
-            wpid = waitpid(pid, &status, WUNTRACED);
-        } while (!WIFEXITED(status) && !WIFSIGNALED(status));
-    }
-
-    return 1;
+    //strcpy(BIN_PATH, path);
+    BIN_PATH = path;
+    //arguments[0] = path;
+    return execute(arguments, 1);
 }
-
 int homebrew_calc(char **arguments){
     pid_t pid;
     pid_t wpid;
@@ -89,35 +76,10 @@ int homebrew_calc(char **arguments){
     char path[1024];
     strcpy(path, BIN_LOCATION);
     strcat(path, "/calc");
-
-    pid = fork();
-    if (pid < 0) {
-        perror("Error forking child process!\n");
-        exit(1);
-    }
-    else if (pid == 0) {
-        if (execvp(path, arguments) == -1) {
-            // COMMENTED OUT SO THEY DONT KEEP PRINTING FOR COMANDS NOT FOUND
-            //perror("Command Failed after forking process for execution!");
-            printf("No command \"%s\" found.\n", arguments[0]);
-            perror("");
-        }
-        exit(1);
-    }
-    else {
-        //Code Segment from "wait - The Open Group" (opengroup.org)
-        do {
-            wpid = waitpid(pid, &status, WUNTRACED);
-        } while (!WIFEXITED(status) && !WIFSIGNALED(status));
-    }
-
-    return 1;
-}
-
-
-int terminate(char **args){
-    exit(0);
-    return 0;
+    //strcpy(BIN_PATH, path);
+    BIN_PATH = path;
+    //arguments[0] = path;
+    return execute(arguments, 1);
 }
 
 int (*homebrew_functions[]) (char **) = {
@@ -128,10 +90,17 @@ int (*homebrew_functions[]) (char **) = {
     &homebrew_calc
 };
 
-int execute(char **args){
+int execute(char **args, int internal){
     pid_t pid;
     pid_t wpid;
     int status;
+    char cmd[1024];
+
+    if(internal){
+        strcpy(cmd, BIN_PATH);
+    }else{
+        strcpy(cmd, args[0]);
+    }
 
     pid = fork();
     if (pid < 0) {
@@ -139,15 +108,32 @@ int execute(char **args){
         exit(1);
     }
     else if (pid == 0) {
-        if (execvp(args[0], args) == -1) {
+
+        if (in){
+            int fd0 = open(in_cmd, O_RDONLY, 0);
+            dup2(fd0, STDIN_FILENO);
+            close(fd0);
+            in = 0;
+        }
+
+        if (out){
+            int fd1 = open(out_cmd, O_RDWR | O_CREAT, 0777);
+            dup2(fd1, STDOUT_FILENO);
+            close(fd1);
+            out = 0;
+        }
+
+        if (execvp(cmd, args) == -1) {
             // COMMENTED OUT SO THEY DONT KEEP PRINTING FOR COMANDS NOT FOUND
             //perror("Command Failed after forking process for execution!");
             printf("No command \"%s\" found.\n", args[0]);
             perror("");
         }
+        fflush(stdout);
         exit(1);
     }
     else {
+        fflush(stdout);
         //Code Segment from "wait - The Open Group" (opengroup.org)
         do {
             wpid = waitpid(pid, &status, WUNTRACED);
@@ -157,6 +143,42 @@ int execute(char **args){
     return 1;
 }
 
+char *process_redirect(char *command){
+    if (strstr(command, "<") != NULL){
+        in = 1;
+        char *base_cmd = strdup(command);
+        char *token = strsep(&base_cmd, "<");
+
+        //cmd is now actually token. base is file
+        getcwd(in_cmd, sizeof(in_cmd));
+        strcat(in_cmd, "/");
+        strcat(in_cmd, base_cmd+1);
+        //in_cmd = strdup(base_cmd);
+        if (in_cmd[0] == ' '){
+            memmove(in_cmd, in_cmd+1, strlen(in_cmd));
+        }
+        return token;
+    }
+
+    else if (strstr(command, ">") != NULL){
+        out = 1;
+        char *base_cmd = strdup(command);
+        char *token = strsep(&base_cmd, ">");
+
+        //cmd is now actually token. base is file
+        getcwd(out_cmd, sizeof(out_cmd));
+        strcat(out_cmd, "/");
+        strcat(out_cmd, base_cmd+1);
+        if (out_cmd[0] == ' '){
+            memmove(in_cmd, in_cmd+1, strlen(in_cmd));
+        }
+        return token;
+    }
+    return command;
+}
+
+
+
 int process_cmd(char **arguments){
     int i;
     for (i = 0; i < 5; i++) {
@@ -164,7 +186,7 @@ int process_cmd(char **arguments){
             return (*homebrew_functions[i])(arguments);
         }
     }
-    return execute(arguments);
+    return execute(arguments, 0);
 }
 
 char *get_cmd(void){
@@ -256,7 +278,11 @@ int main(int argc, char **argv){
     shell_init(argc, argv);
     while(1){
         prompt();
+        out = 0;
+        in = 0;
+        bzero(arguments, sizeof(arguments));
         command = get_cmd();
+        command = process_redirect(command);
         arguments = process_args(command);
         if (arguments[0] != NULL){
             if (process_cmd(arguments) < 0){
