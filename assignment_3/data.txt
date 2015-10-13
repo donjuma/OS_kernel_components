@@ -1,0 +1,6 @@
+W08476231   Cecil   Snodgrass   N   3.15
+W07770420   Mary    Amelia  Y   3.45
+W06609111   Anne Peabody    Y   3.21
+W05125052   Barry McKenzie  Y   2.78
+W05050505   Michael Bevan   N   2.63
+W07236104   Harry Horsehead N   2.26

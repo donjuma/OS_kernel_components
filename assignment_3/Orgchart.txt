@@ -1,0 +1,17 @@
+President/Bruce/Shepard
+>Vice-President, Academic Affairs/Brent/Carbajal
+>>Dean, College of Business and Economics/Craig/Dunn
+>>Dean, College of Fine and Performing Arts/Kit/Spicer
+>>Dean, College of Humanities and Social Sciences/LeaAnn/Martin
+>>Dean, College of Science and Engineering/Catherine/Clark
+>>>Chair, Biology Department/Joann/Otto
+>>>Chair, Chemistry Department/James/Vyvyan
+>>>Chair, Computer Science Department/Perry/Fizzano
+>>>Chair, Engineering and Design/Jeffrey/Newcomer
+>>>Chair, Geology Department/Bernie/Housen
+>>>Chair, Mathematics Department/Tjalling/Ypma
+>>>Chair, Physics Department/Andreas/Riemann
+>>Dean, Fairhaven College of Interdisciplinary Studies/Jack/Herring
+>>Dean, Huxley College of the Environment/Steven/Hollenhorst
+>>Dean, Woodring College of Education/Francisco/Rios
+>Vice-President, Business and Financial Affairs/Richard/Van Den Hul
