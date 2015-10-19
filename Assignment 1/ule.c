@@ -12,12 +12,11 @@
 #include <stdlib.h>
 #include "Dispatcher.h"
 #include "SchedSim.h"
-#include "linkedList.h"
 
 #define SIZE	20
 #define TIMESLICE   100
 
-typedef enum {READY, WAITING, RUNNING} proc_state;
+//typedef enum {READY, WAITING, RUNNING} proc_state;
 
 // a real cheap ready queue - don't try this at home, children!
 int readyproc[SIZE];
@@ -36,6 +35,18 @@ struct Node* nextRear = NULL;
 struct Node* currentFront = NULL;
 struct Node* currentRear = NULL;
 
+void swapQueue(){
+    struct Node* tempFront = NULL;
+    struct Node* tempRear = NULL;
+
+    tempFront = nextFront;
+    tempRear = nextRear;
+    nextFront = currentFront;
+    nextRear = currentRear;
+    currentFront = tempFront;
+    currentRear = tempRear;
+}
+
 void NewProcess(int pid) {
 // Informs the student's code that a new process has been created, with process id = pid
 // The new process should be added to the ready queue
@@ -46,14 +57,28 @@ void NewProcess(int pid) {
 void Dispatch(int *pid) {
 // Requests the pid of the process to be changed to the running state
 // The process should be removed from the ready queue
-	*pid = 0;				// zero pid implies an empty ready queue
-							// this should never happen, but ...
-	if (numready > 0) {
-		numready--;
-		*pid = readyproc[last++];
-		if (last >= SIZE) last = 0;
-		printf("process %d dispatched\n", *pid);
-	}
+    *pid = 0;
+
+    struct Node* temp = currentFront;
+
+    if (currentFront == NULL){
+        swapQueue();
+        temp = currentFront;
+        if (currentFront == NULL){
+            //If both current and next are empty
+            return;
+        }
+    }
+
+    *pid = temp->pid;
+	printf("Process %d dispatched\n", *pid);
+    if (currentFront == currentRear){
+        currentFront = currentRear = NULL;
+    }
+    else{
+        currentFront = currentFront->next;
+    }
+    free(temp);
 }
 
 void Ready(int pid, int CPUtimeUsed) {
@@ -68,7 +93,7 @@ void Ready(int pid, int CPUtimeUsed) {
     //temp->proc_state = READY;
     temp->next = NULL;
 
-    if (CPUtimeUSED < TIMESLICE){
+    if (CPUtimeUsed < TIMESLICE){
         //Use the current queue.
         if (currentFront == NULL && currentRear == NULL){
             currentFront = currentRear = temp;
@@ -91,17 +116,6 @@ void Ready(int pid, int CPUtimeUsed) {
         printf("Process %d added to next queue after using %d msec\n", pid, CPUtimeUsed);
     }
 }
-/*
-	if (numready < SIZE) {
-		numready++;
-		readyproc[first++] = pid;// if the ready queue fills, we start to lose pids
-								// this is for demo purposes only!
-		if (first >= SIZE) first = 0;
-		printf("process %d added to ready queue after using %d msec\n", pid, CPUtimeUsed);
-	}
-}
-*/
-
 
 void Waiting(int pid) {
 // Informs the student's code that the process with id = pid has changed from the running state
