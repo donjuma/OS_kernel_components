@@ -10,6 +10,8 @@ Assg1: Assg1.c
 ule: ule.c
 	$(CC) ule.c SchedSim.o -o ule
 
+4BSD: 4BSD.c
+	$(CC) 4BSD.c SchedSim.o -o 4BSD
 
 clean:
-	rm Assg1
+	rm Assg1 ule 4BSD

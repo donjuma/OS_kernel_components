@@ -37,7 +37,7 @@ void Dispatch(int *pid) {
 		*pid = readyproc[last++];
 		if (last >= SIZE) last = 0;
 		printf("process %d dispatched\n", *pid);
-	} 
+	}
 }
 
 void Ready(int pid, int CPUtimeUsed) {
@@ -67,6 +67,6 @@ void Terminate(int pid) {
 
 int main() {
 	// Simulate for 100 rounds, timeslice=100
-	Simulate(1000, 100);
+	Simulate(100, 100);
     return 0;
 }
