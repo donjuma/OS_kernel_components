@@ -124,11 +124,13 @@ struct Node* popNode(struct Node* head, int pid){
     if (head == NULL){
         return NULL;
     }
+    if (head->pid == pid){
+        Next = head;
+        head = Next->next;
+        return Next;
+    }
     if (head->next == NULL){
         return NULL;
-    }
-    if (head->pid == pid){
-        return head;
     }
     Next = head->next;
     return _popNode(head, Next, pid);
@@ -196,9 +198,8 @@ void Ready(int pid, int CPUtimeUsed) {
     // The process should be added to the ready queue
 
     double waiting = isWaiting(pid);
-    if (waiting){
-        printf("Returned from wait: %f\n", waiting);
-    }
+    overhead->counter += CPUtimeUsed;
+
     //Scan the queue in search of the PID. If found, return node, else, create it.
     struct Node* temp = (struct Node*)malloc(sizeof(struct Node));
     temp->pid = pid;
@@ -259,7 +260,7 @@ void runTimeAdjust(){
 
     readyQueue->avgRunTime = (readyQueue->avgRunTime / readyQueue->counter) * 1000;
     waitQueue->avgRunTime = (waitQueue->avgRunTime / waitQueue->counter) * 1000;
-    overhead->avgRunTime = (overhead->avgRunTime / overhead->counter) * 1000;
+   // overhead->avgRunTime = (overhead->avgRunTime / overhead->counter) * 1000;
 
     readyQueue->minRunTime = (readyQueue->minRunTime * 1000);
     waitQueue->minRunTime = (waitQueue->minRunTime * 1000);
@@ -268,16 +269,20 @@ void runTimeAdjust(){
     readyQueue->maxRunTime = (readyQueue->maxRunTime * 1000);
     waitQueue->maxRunTime = (waitQueue->maxRunTime * 1000);
     overhead->maxRunTime = (overhead->maxRunTime * 1000);
+
+    overhead->avgRunTime = (overhead->maxRunTime - overhead->minRunTime) - overhead->counter;
 }
 
 int main() {
     runTimeInit();
+    overhead->minRunTime = get_WallTime();
     // Simulate for 100 rounds, timeslice=100
     Simulate(ROUNDS, TIMESLICE);
+    overhead->maxRunTime = get_WallTime();
 
     runTimeAdjust();
-    printf("The average, min, and max time processes spent in ready queue are: %f, %f, %f\n", readyQueue->avgRunTime, readyQueue->minRunTime, readyQueue->maxRunTime);
-    printf("The average, min, and max time processes spent responding to I/O are: %f, %f, %f\n", waitQueue->avgRunTime, waitQueue->minRunTime, waitQueue->maxRunTime);
-    printf("total times: %f, %d\n", overhead->avgRunTime, overhead->counter);
+    printf("The average, min, and max time in msec that processes spent in ready queue was: %f, %f, %f\n", readyQueue->avgRunTime, readyQueue->minRunTime, readyQueue->maxRunTime);
+    printf("The average, min, and max time in msec that processes spent responding to I/O are: %f, %f, %f\n", waitQueue->avgRunTime, waitQueue->minRunTime, waitQueue->maxRunTime);
+    printf("The proportion of time spent on scheduler overheads was %f msec.\n", overhead->avgRunTime);
     return 0;
 }
