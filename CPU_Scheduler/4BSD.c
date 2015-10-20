@@ -58,6 +58,58 @@ void priority_init(){
     }
 }
 
+void updateState(struct Node* head, int pid, enum proc_state state){
+    if (head == NULL){
+        return;
+    }
+    if (head->pid == pid){
+        head->state = state;
+        return;
+    }
+    if (head->next == NULL){
+        return;
+    }
+    updateState(head->next, pid, state);
+}
+
+struct Node* _popNode(struct Node* head, struct Node* Next, int pid){
+    while(Next != NULL){
+        if (Next->pid == pid){
+            head->next = Next->next;
+            if (head->next == NULL){
+                priority[16]->rear = head;
+            }
+            return Next;
+        }
+        head = Next;
+        Next = Next->next;
+    }
+    return NULL;
+}
+
+struct Node* popNode(struct Node* head, int pid){
+
+    struct Node* Next = (struct Node*)malloc(sizeof(struct Node));
+    if (head == NULL){
+        return NULL;
+    }
+    if (head->pid == pid){
+        Next = head;
+        head = Next->next;
+        priority[16]->front = priority[16]->front->next;
+        if (priority[16]->front == NULL){
+            priority[16]->rear = NULL;
+        }
+        return Next;
+    }
+    if (head->next == NULL){
+        return NULL;
+    }
+    Next = head->next;
+    return _popNode(head, Next, pid);
+}
+
+/*
 struct Node* popNode(int pid, int CPUTIME){
     struct Node* temp = (struct Node*)malloc(sizeof(struct Node));
     struct Node* requestedNode = (struct Node*)malloc(sizeof(struct Node));
@@ -86,6 +138,7 @@ struct Node* popNode(int pid, int CPUTIME){
     }
     return NULL;
 }
+*/
 
 void NewProcess(int pid) {
     // Informs the student's code that a new process has been created, with process id = pid
@@ -101,31 +154,24 @@ void Dispatch(int *pid) {
     int i = 15;
     struct Node* temp = NULL;
 
-    //perror("BEGIN while\n");
     while (i >= 0){
-        //perror("IN while\n");
         if (priority[i]->front != NULL){
-            //perror("IN if\n");
             temp = priority[i]->front;
-            //perror("SET TEMP = Priority[i]->front\n");
             if (priority[i]->front == priority[i]->rear){
-               // perror("IN if2\n");
-               // priority[i]->front = priority[i]->rear = NULL;
+                priority[i]->front = priority[i]->rear = NULL;
             }else{
-               // perror("IN else\n");
                 priority[i]->front = temp->next;
             }
-            //perror("OUT if\n");
             *pid = temp->pid;
-            //perror("JUST SET THE pid about to change state\n");
             temp->state = RUNNING;
-            //perror("Changed state about to put node in [16]\n");
+            temp->next = NULL;
             if (priority[16]->front == NULL && priority[16]->rear == NULL){
                 priority[16]->front = priority[16]->rear = temp;
             }else{
-                 priority[16]->rear->next = temp;
+                priority[16]->rear->next = temp;
                 priority[16]->rear = temp;
             }
+            priority[16]->rear->next = NULL;
             printf("Process %d dispatched\n", *pid);
             return;
         }
@@ -140,9 +186,18 @@ void Ready(int pid, int CPUtimeUsed) {
 
 
     //Scan the queue in search of the PID. If found, return node, else, create it.
-    struct Node* temp = popNode(pid, CPUtimeUsed);
+    struct Node* temp = popNode(priority[16]->front, pid);
 
-    if (temp == NULL){
+    if(temp != NULL){
+
+        if (CPUtimeUsed == 100 && temp->priority != 0){
+            temp->priority--;
+        }
+        if (temp->state == WAITING && temp->priority != 15){
+            temp->priority++;
+        }
+
+    }else{
         temp = (struct Node*)malloc(sizeof(struct Node));
         temp->pid = pid;
         temp->priority = 8;
@@ -164,16 +219,20 @@ void Ready(int pid, int CPUtimeUsed) {
 void Waiting(int pid) {
     // Informs the student's code that the process with id = pid has changed from the running state
     // to the waiting state
+    updateState(priority[16]->front, pid, WAITING);
     printf("process %d waiting\n", pid);
 }
 
 
 void Terminate(int pid) {
     // Informs the student's code that the process with id = pid has terminated
-    struct Node* temp = (struct Node*)malloc(sizeof(struct Node));
-    struct Node* terminatedNode = (struct Node*)malloc(sizeof(struct Node));
-    temp->next = priority[16]->front;
+    struct Node* temp = popNode(priority[16]->front, pid);    //(struct Node*)malloc(sizeof(struct Node));
+    //struct Node* terminatedNode = (struct Node*)malloc(sizeof(struct Node));
+    //temp->next = priority[16]->front;
+    free(temp);
 
+
+    /*
     while(temp->next != NULL) {
         if (temp->next == temp->next->next){
             return;
@@ -185,6 +244,7 @@ void Terminate(int pid) {
         }
         temp = temp->next;
     }
+    */
     printf("process %d terminated\n", pid);
 }
 
@@ -193,5 +253,6 @@ int main() {
     priority_init();
     // Simulate for 100 rounds, timeslice=100
     Simulate(ROUNDS, TIMESLICE);
+    printf("Done\n");
     return 0;
 }
