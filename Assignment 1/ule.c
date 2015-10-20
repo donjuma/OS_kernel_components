@@ -15,14 +15,9 @@
 
 #define SIZE	20
 #define TIMESLICE   100
+#define ROUNDS  15
 
 //typedef enum {READY, WAITING, RUNNING} proc_state;
-
-// a real cheap ready queue - don't try this at home, children!
-int readyproc[SIZE];
-int numready = 0;
-int first = 0;
-int last = 0;
 
 struct Node {
     int pid;
@@ -36,6 +31,7 @@ struct Node* currentFront = NULL;
 struct Node* currentRear = NULL;
 
 void swapQueue(){
+    printf("Swapping queues\n");
     struct Node* tempFront = NULL;
     struct Node* tempRear = NULL;
 
@@ -51,7 +47,7 @@ void NewProcess(int pid) {
 // Informs the student's code that a new process has been created, with process id = pid
 // The new process should be added to the ready queue
 	printf("new process %d created\n", pid);
-	Ready(pid, 0);				// note: you need to invoke Ready()
+	Ready(pid, 0);
 }
 
 void Dispatch(int *pid) {
@@ -131,6 +127,6 @@ void Terminate(int pid) {
 
 int main() {
 	// Simulate for 100 rounds, timeslice=100
-	Simulate(100, TIMESLICE);
+	Simulate(ROUNDS, TIMESLICE);
     return 0;
 }
