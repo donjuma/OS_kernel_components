@@ -10,12 +10,15 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/time.h>
 #include "Dispatcher.h"
 #include "SchedSim.h"
 
 #define SIZE	20
 #define TIMESLICE   100
 #define ROUNDS  15
+#define MIN(a,b) (((a)<(b))?(a):(b))
+#define MAX(a,b) (((a)>(b))?(a):(b))
 
 enum proc_state{READY, WAITING, RUNNING, NEW};
 
@@ -36,6 +39,14 @@ struct Node* nextFront = NULL;
 struct Node* nextRear = NULL;
 struct Node* currentFront = NULL;
 struct Node* currentRear = NULL;
+
+//Retrieve clock time
+double get_WallTime(){
+    struct timeval tp;
+    gettimeofday(&tp, NULL);
+    return (double) (tp.tv_sec + tp.tv_usec/1000000.0);
+}
+
 
 void priority_init(){
     int i;

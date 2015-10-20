@@ -1,4 +1,4 @@
-CC=gcc
+CC=gcc -g
 CFLAGS = -g -Wall -o
 
 all: Assg1
