@@ -149,19 +149,6 @@ void Dispatch(int *pid) {
     double timeNow;
     *pid = 0;
 
-    struct Node* waitProc = popNode(waitFront, *pid);
-    if (waitProc != NULL && waitProc->queueTime != 0.0){
-        timeNow = get_WallTime();
-        timeNow = (timeNow - (waitProc->queueTime));
-        waitQueue->avgRunTime = timeNow;
-        waitQueue->minRunTime = MIN(waitQueue->minRunTime, timeNow);
-        waitQueue->maxRunTime = MAX(waitQueue->maxRunTime, timeNow);
-        waitQueue->counter += 1;
-        timeNow = 0.0;
-        free(waitProc);
-    }
-
-
     struct Node* temp = currentFront;
 
     if (currentFront == NULL){
@@ -181,6 +168,19 @@ void Dispatch(int *pid) {
     else{
         currentFront = currentFront->next;
     }
+
+    struct Node* waitProc = popNode(waitFront, *pid);
+    if (waitProc != NULL && waitProc->queueTime != 0.0){
+        timeNow = get_WallTime();
+        timeNow = (timeNow - (waitProc->queueTime));
+        waitQueue->avgRunTime = timeNow;
+        waitQueue->minRunTime = MIN(waitQueue->minRunTime, timeNow);
+        waitQueue->maxRunTime = MAX(waitQueue->maxRunTime, timeNow);
+        waitQueue->counter += 1;
+        timeNow = 0.0;
+        free(waitProc);
+    }
+
     readyQueue->counter += 1;
     timeNow = get_WallTime();
     timeNow = (timeNow - (temp->queueTime));
@@ -236,6 +236,7 @@ void Waiting(int pid) {
     struct Node* temp = (struct Node*)malloc(sizeof(struct Node));
     temp->pid = pid;
     temp->queueTime = 0.0; //get_WallTime();
+    temp->next = NULL;
 
     if (waitFront == NULL && waitRear == NULL){
         waitFront = waitRear = temp;
@@ -254,11 +255,27 @@ void Terminate(int pid) {
     printf("process %d terminated\n", pid);
 }
 
+void runTimeAdjust(){
+
+    readyQueue->avgRunTime = (readyQueue->avgRunTime / readyQueue->counter) * 1000;
+    waitQueue->avgRunTime = (waitQueue->avgRunTime / waitQueue->counter) * 1000;
+    overhead->avgRunTime = (overhead->avgRunTime / overhead->counter) * 1000;
+
+    readyQueue->minRunTime = (readyQueue->minRunTime * 1000);
+    waitQueue->minRunTime = (waitQueue->minRunTime * 1000);
+    overhead->minRunTime = (overhead->minRunTime * 1000);
+
+    readyQueue->maxRunTime = (readyQueue->maxRunTime * 1000);
+    waitQueue->maxRunTime = (waitQueue->maxRunTime * 1000);
+    overhead->maxRunTime = (overhead->maxRunTime * 1000);
+}
+
 int main() {
     runTimeInit();
     // Simulate for 100 rounds, timeslice=100
     Simulate(ROUNDS, TIMESLICE);
-    readyQueue->avgRunTime = readyQueue->avgRunTime / readyQueue->counter;
+
+    runTimeAdjust();
     printf("The average, min, and max time processes spent in ready queue are: %f, %f, %f\n", readyQueue->avgRunTime, readyQueue->minRunTime, readyQueue->maxRunTime);
     printf("The average, min, and max time processes spent responding to I/O are: %f, %f, %f\n", waitQueue->avgRunTime, waitQueue->minRunTime, waitQueue->maxRunTime);
     printf("total times: %f, %d\n", overhead->avgRunTime, overhead->counter);
