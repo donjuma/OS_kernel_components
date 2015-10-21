@@ -1,9 +1,11 @@
 /*
- *  Demonstration of CPU scheduler simulator
- *  using cheap, limited ready queue
+ *  CPU scheduler simulator
  *
- *  David Bover, WWU Computer Science, June 2007
- *  updated October, 2015
+ *  Omar Juma
+ *  W01090035
+ *  CSCI: 460 - Operating Systems
+ *  WWU Computer Science
+ *  October 21, 2015
  *
  */
 
@@ -14,7 +16,6 @@
 #include "Dispatcher.h"
 #include "SchedSim.h"
 
-#define SIZE	20
 #define TIMESLICE   100
 #define ROUNDS  100
 #define MIN(a,b) (((a)<(b))?(a):(b))
