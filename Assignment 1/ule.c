@@ -100,6 +100,10 @@ double isWaiting(int pid){
             temp->queueTime = get_WallTime();
             return temp->queueTime;
         }
+        if (temp == temp->next){
+            temp->next == NULL;
+            return 0.0;
+        }
         temp = temp->next;
     }
     return 0.0;
@@ -110,7 +114,14 @@ struct Node* _popNode(struct Node* head, struct Node* Next, int pid){
     while(Next != NULL){
         if (Next->pid == pid){
             head->next = Next->next;
+            if (head->next == NULL){
+                waitRear = head;
+            }
             return Next;
+        }
+        if (head == head->next){
+            head->next = NULL;
+            return NULL;
         }
         head = Next;
         Next = Next->next;
@@ -127,6 +138,9 @@ struct Node* popNode(struct Node* head, int pid){
     if (head->pid == pid){
         Next = head;
         head = Next->next;
+        if (waitFront == NULL){
+            waitRear = NULL;
+        }
         return Next;
     }
     if (head->next == NULL){
@@ -175,7 +189,7 @@ void Dispatch(int *pid) {
     if (waitProc != NULL && waitProc->queueTime != 0.0){
         timeNow = get_WallTime();
         timeNow = (timeNow - (waitProc->queueTime));
-        waitQueue->avgRunTime = timeNow;
+        waitQueue->avgRunTime += timeNow;
         waitQueue->minRunTime = MIN(waitQueue->minRunTime, timeNow);
         waitQueue->maxRunTime = MAX(waitQueue->maxRunTime, timeNow);
         waitQueue->counter += 1;
@@ -244,6 +258,7 @@ void Waiting(int pid) {
         printf("process %d waiting\n", pid);
         return;
     }
+    //if (wait
     waitRear->next = temp;
     waitRear = temp;
 
