@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include "MemSim.h"
 
-#define TABLESIZE	512 		// Process Table (Known PIDs)
+#define TABLESIZE	2048 		// Process Table (Known PIDs)
 #define MAXPROC		16		    // maximum number of processes in the system
 #define PAGESIZE	4096		// system page size
 
