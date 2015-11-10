@@ -149,7 +149,7 @@ int leastRecentlyUsed(int ref, int dirty){
 //Least recently used.
 int replace(int pid, int pagenumber, int write){
     int index, i, r, d, j;
-    printf("Entered Replace\n");
+    //printf("Entered Replace\n");
     for (i=0; i<4; i++){
         //Criteria for choosing the best page to page-out
         if (i==0) r = d = 0;
@@ -158,7 +158,7 @@ int replace(int pid, int pagenumber, int write){
         if (i==3) r = d = 1;
 
         if ((index = leastRecentlyUsed(r, d)) >= 0){
-            printf("Replacing page: %d from PID,PAGENUM: %d,%d with %d, %d\n", index, table[index]->pid, table[index]->pagenumber, pid, pagenumber);
+            //printf("Replacing page: %d from PID,PAGENUM: %d,%d with %d, %d\n", index, table[index]->pid, table[index]->pagenumber, pid, pagenumber);
 
             //Record Statistics for pageFaults. Negation worked better than if-else...
             if (table[index]->dirty) writePageFault++;
@@ -207,14 +207,14 @@ int Access(int pid, int address, int write) {
     if (findPID(pid)){
         if ((framenumber = find(pid, pagenumber, write)) >= 0) {
             physicalAddr = ((framenumber << 12) | offset);
-	    	printf("pid %d wants %s access to address %d on page %d. Given: %08x\n",
-	               pid, (write) ? "write" : "read", address, pagenumber, physicalAddr);
+	    	//printf("pid %d wants %s access to address %d on page %d. Given: %08x\n",
+	               //pid, (write) ? "write" : "read", address, pagenumber, physicalAddr);
             return physicalAddr;
         }
         else if ((framenumber = insert(pid, pagenumber, write)) >= 0){
             physicalAddr = ((framenumber << 12) | offset);
-	        printf("pid %d wants %s access to address %d on page %d. Given: %08x\n",
-	               pid, (write) ? "write" : "read", address, pagenumber, physicalAddr);
+	        //printf("pid %d wants %s access to address %d on page %d. Given: %08x\n",
+	        //       pid, (write) ? "write" : "read", address, pagenumber, physicalAddr);
             return physicalAddr;
         }
         else{
@@ -226,8 +226,8 @@ int Access(int pid, int address, int write) {
                 abort();
             }
             physicalAddr = ((framenumber << 12) | offset);
-	    	printf("pid %d wants %s access to address %d on page %d. Given: %08x\n",
-	               pid, (write) ? "write" : "read", address, pagenumber, physicalAddr);
+	    	//printf("pid %d wants %s access to address %d on page %d. Given: %08x\n",
+	        //       pid, (write) ? "write" : "read", address, pagenumber, physicalAddr);
             return physicalAddr;
         }
     }
@@ -235,7 +235,7 @@ int Access(int pid, int address, int write) {
     //The PID is not known. Either add it to list or reject the request
     else{
         if (procCount >= MAXPROC){
-            printf("pid %d refused\n", pid);
+            //printf("pid %d refused\n", pid);
             return 0;
         }
         else if ((registerPID(pid)) >= 0){
@@ -251,10 +251,10 @@ int Access(int pid, int address, int write) {
             }
             return 0;
         }else if ((registerPID(pid)) == -2){
-            printf("PID: %d REJECTED!\nREASON: Process limit reached\n", pid);
+            //printf("PID: %d REJECTED!\nREASON: Process limit reached\n", pid);
         }else{
             perror("Bad stuff happened\nPID: %d, address: %d, write: %d\n");
-            printf("Bad stuff happened\nPID: %d, address: %d, write: %d, procCount: %d\n", pid, address, write, procCount);
+            //printf("Bad stuff happened\nPID: %d, address: %d, write: %d, procCount: %d\n", pid, address, write, procCount);
             return 0;
         }
     }
@@ -262,14 +262,14 @@ int Access(int pid, int address, int write) {
 
 // called when process terminates
 void Terminate(int pid) {
-	printf("pid %d terminated\n", pid);
+	//printf("pid %d terminated\n", pid);
 	Remove(pid);
 }
 
 int main() {
     init_table();
 	printf("MMU simulation started\n");
-	Simulate(1000);
+	Simulate(10000000);
 	printf("MMU simulation completed\n");
     printf("Number of page faults requiring only reading of the page to be" \
             "swapped in: %d\n", readPageFault);
