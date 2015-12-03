@@ -1,0 +1,166 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>  
+  <title>Universal Login</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=9" >     
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--set viewport to device width-->
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+  <link href="/wwucommon/passwordchange/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/wwucommon/passwordchange/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="/wwucommon/passwordchange/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+      <link rel="stylesheet" type="text/css"  href="/wwucommon/passwordchange/stylesheets/basic.css" media="screen"/>
+
+<!--        <link rel="stylesheet" type="text/css"  media="screen and (min-width: 769px)" 
+      href="/wwucommon/passwordchange/stylesheets/layout-tab-lg.css"  /> -->
+
+      <link rel="stylesheet" type="text/css"  media="screen and (min-width: 481px)" 
+      href="/wwucommon/passwordchange/stylesheets/layout-tab-sm.css"  />
+
+       <link rel="stylesheet" type="text/css"  media="screen and (max-width: 480px)" 
+      href="/wwucommon/passwordchange/stylesheets/layout-phonep.css"  />
+   <!--for compass -->
+
+   <script type="text/javascript" src="/wwucommon/passwordchange/js/jquery.js"></script>
+   <script type="text/javascript" src="/wwucommon/passwordchange/js/navSliding.js"></script>
+
+    <script type="text/javascript">
+        function getCookie(c_name)
+        {
+            if (document.cookie.length>0) {
+                c_start=document.cookie.indexOf(c_name + "=");
+                if (c_start!=-1) {
+                    c_start=c_start + c_name.length+1; 
+                    c_end=document.cookie.indexOf(";",c_start);
+                    if (c_end==-1) c_end=document.cookie.length;
+                        return unescape(document.cookie.substring(c_start,c_end));
+                } 
+            }
+
+            return "";
+        }
+
+        function setCookie(c_name,value,expiredays)
+        {
+            var exdate=new Date();
+            exdate.setDate( exdate.getDate() + expiredays );
+            document.cookie = c_name 
+                            + "="
+                            + escape(value)
+                            + ( ( expiredays == null ) ? "" : ";expires=" + exdate.toGMTString()
+                            + ';path=/cas;secure' );
+        }
+
+        function saveWorkstationType()
+        {
+            if ( confirm( "Remember the Private Computer setting?" ) ) {
+                workstationType = document.getElementById( 'workstationType' );
+                if ( workstationType.checked == true ) {
+                    setCookie( "workstationType", "private", 1825 );
+                }
+                else {
+                    setCookie( "workstationType", "public", 1825 );
+                }
+            }
+        }
+
+        function loadWorkstationType()
+        {
+            workstationType = getCookie( 'workstationType' );
+            if ( workstationType != null && workstationType == "private" ) {
+                document.getElementById( 'workstationType' ).checked = true;
+            }
+        }
+
+        function trimUsername()
+        {
+            var text = document.getElementById( 'username' );
+            text.value = text.value.replace( /^\s+|\s+$/g, "" );
+        }
+
+        function beforeSubmit()
+        {
+            trimUsername();
+        }
+    </script>
+</head>
+<body onload="loadWorkstationType();" lang="en">
+<div id="wrapper">
+  <div id="logo">
+       <span class="offscreen">Western Washington University</span>
+  </div>
+  <div id="content">
+  <h1>Universal Login</h1>
+  <form id="login_form" name="login_form" method="post" onsubmit="beforeSubmit()"
+        action="login;jsessionid=A7564B5C788CF00B2C479405E4C77E61?service=https://wwu.instructure.com/login/cas"
+  >
+    <!-- The following hidden fields must be part of the submitted Form -->
+    <input type="hidden" name="lt" value="LT-20997-GS5HoP3xtpT0attdXsFub5kWCanOGi" />
+    <input type="hidden" name="execution" value="e1s1" />
+    <input type="hidden" name="_eventId" value="submit" />
+
+   <p class="flush"><label for="username">Username: </label>
+   <input  type="text" name="username" id="username" title="type your username" tabindex="100" />
+   </p>
+   <p class="flush"><label for="password">Password: </label>
+   <input  type="password" name="password" id="pwd" title="type your password" tabindex="110" />
+   </p>
+                	    
+                	    
+                	    
+   <p class="centered optional" 
+     title="Checking this keeps you logged in longer, but is only safe if no one else uses your computer.">
+     <input type="checkbox" name="workstationType" id="workstationType" value="private" class="styled" tabindex="120" onclick="saveWorkstationType()"/> 
+     <label for="workstationType">This is a private computer</label>
+     <span class="clickable"><a href="#"><img id="question" src="/wwucommon/passwordchange/images/question_mark.gif"  width="23" height="21" alt="what's this?" align="absbottom"></a></span>
+     <div class="hidden answer">
+     Checking this keeps you logged in longer, but is only safe if no one else uses your computer.
+     </div>
+   </p>
+   <p class="centered"><input class="gobutton rounded" type="submit" value="Log In" tabindex="130" /></p>
+  </form>
+  </div><!-- content-->
+  <div id="content-wrap">
+    <div id="nav">
+    	<ul title="navigation">
+            <li><a href="https://www.wwu.edu/chpw/">Forgot / Reset Password</a></li>
+            <li><a href="https://jweb-admcs.wwu.edu/IdRecovery/">Lookup Username and W#</a></li>
+            <li><a href="https://www.wwu.edu/webactivate/">Activate Account</a></li>
+
+            <li><a href="https://admin.wwu.edu/pls/wwis/twbkwbis.P_WWWLogin">Login for Alumni / Former Employees</a></li>
+
+            <li><a href="mailto:helpdesk@wwu.edu">Need more help?  Contact the Help Desk: 360.650.3333</a></li>   
+        </ul>
+    
+    <p class="centered">
+    <a href="https://wwu.instructure.com/login?canvas_login=1"><span class="lmsbutton">Canvas Guest Login</span></a>
+</p>
+
+    
+        <p class="help centered"><a href="http://west.wwu.edu/atus/helpdesk/useragreement.shtml">Computing Resources User Agreement</a></p>
+    </div><!-- nav -->
+  </div><!-- content-wrap -->
+</div><!-- wrapper -->	
+<!-- This script rounds the corners of anything with class = "rounded", such as the department footer -->
+
+<script type="text/javascript">
+$(document).ready( function(){
+  $(".clickable").click(function () {
+      $('.hidden').removeClass('hidden').addClass('washidden');
+  });
+});
+
+/* set the focus to the login form, username field */
+document.login_form.username.focus();
+</script>
+</body>
+</html>
