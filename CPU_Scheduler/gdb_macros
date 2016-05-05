@@ -1,0 +1,8 @@
+define walk_list
+set $temp = $arg0
+while ($temp)
+printf "(%d,0x%X)-->",((struct Node*)$temp)->pid,((struct Node*)$temp)->next
+set $temp = ((struct Node*)$temp)->next
+end
+printf "Done\n"
+end

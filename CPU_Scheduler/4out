@@ -1,0 +1,28 @@
+The average, min, and max time in msec that processes spent in ready queue was: 105.813427, 0.000000, 1664.707899
+The average, min, and max time in msec that processes spent responding to I/O are: 64.645504, 0.002861, 734.320879
+The proportion of time spent on scheduler overheads was 2026.524902 msec.
+
+The average, min, and max time in msec that processes spent in ready queue was: 140.115757, 0.000954, 2615.301132
+The average, min, and max time in msec that processes spent responding to I/O are: 88.991684, 0.001907, 814.769030
+The proportion of time spent on scheduler overheads was 1788.997803 msec.
+
+The average, min, and max time in msec that processes spent in ready queue was: 179.341002, 0.000000, 2813.265085
+The average, min, and max time in msec that processes spent responding to I/O are: 55.779271, 0.001907, 241.365194
+The proportion of time spent on scheduler overheads was 1842.975098 msec.
+
+The average, min, and max time in msec that processes spent in ready queue was: 103.693171, 0.000000, 502.907991
+The average, min, and max time in msec that processes spent responding to I/O are: 55.911594, 0.010967, 150.892019
+The proportion of time spent on scheduler overheads was 1720.649902 msec.
+
+The average, min, and max time in msec that processes spent in ready queue was: 209.620044, 0.000000, 1508.656025
+The average, min, and max time in msec that processes spent responding to I/O are: 59.593409, 0.001907, 211.229086
+The proportion of time spent on scheduler overheads was 1796.407227 msec.
+
+The average, min, and max time in msec that processes spent in ready queue was: 195.115602, 0.000954, 4510.715961
+The average, min, and max time in msec that processes spent responding to I/O are: 54.498346, 0.002146, 191.081047
+The proportion of time spent on scheduler overheads was 1752.708984 msec.
+
+
+155 msec
+62.5
+1820
