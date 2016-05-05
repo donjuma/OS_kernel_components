@@ -1,0 +1,40 @@
+                                                                                                    Omar Juma
+                                                                                             November 2, 2015
+                                                                                                    W01090035
+                                                                                                     CSCI 460
+                                                                                                 Assignment 2
+                                                                                              Rrushi / Nelson
+
+                                    ASSIGNMENT 2 WRITEUP
+
+
+I ran and tested both the Least Frequently Used and Least Recently Used algorithms and below are my findings.
+
+In both algorithms I noticed that the default settings (i.e. 8MB memory and Simulate(1000);) were such that
+the algorithms never needed to page anything out. As such, I altered the options for testing purposes.
+
+First I lowered the memory so low that I forced many pageFaults, I slowly increased that amount until I was
+back at the default amount. I also discovered a bug that resulted in the default amount never pageFaulting
+as I originally thought this was because the page table was too large.
+
+In any case, throughtout all of my testing, I noticed a reoccuring pattern. In every instance of my testing,
+the Least Recently Used algorithm was always better (read: had lower pageFaults) than the Least Frequently
+Used algorithm. This makes sense as most of the Access calls had spacially local memory and were in sequence
+of each other. Meaning that there were bursts of calls to the same page and as such this resulted in better
+performance.
+
+Running the tests three times in a similar enviornment yeilded the following results:
+    - Least Frequently Used:
+        - Iteration 1:      778 PageFaults
+        - Iteration 2:      807 PageFaults
+        - Iteration 3:      808 PageFaults
+        - Average:          797 PageFaults
+
+    - Least Recently Used:
+        - Iteration 1:      664 PageFaults
+        - Iteration 2:      684 PageFaults
+        - Iteration 3:      634 PageFaults
+        - Average:          660 PageFaults
+
+On average, the Least Recently Used algorithm was about 120% more efficient than the Least Frequently Used
+algorithm.

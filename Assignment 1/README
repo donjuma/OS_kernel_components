@@ -1,0 +1,6 @@
+After completing both of the algorithms and testing both of them multiple times under the same conditions
+I was surprised to find that on average, the 4BSD algorithm was far superior to that of the ULE.
+
+The odd part was that the 4BSD even had a lower overhead time which is unusual since it has more
+queues to maintain. Clearly, the wait time-response was also smaller here since waiting processes
+were granted a higher priority.

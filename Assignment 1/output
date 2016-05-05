@@ -1,0 +1,2916 @@
+new process 1000 created
+process 1000 added to ready queue after using 0 msec
+new process 1001 created
+process 1001 added to ready queue after using 0 msec
+new process 1002 created
+process 1002 added to ready queue after using 0 msec
+process 1000 dispatched
+process 1000 added to ready queue after using 100 msec
+process 1001 dispatched
+process 1001 added to ready queue after using 100 msec
+process 1002 dispatched
+process 1002 waiting
+new process 1003 created
+process 1003 added to ready queue after using 0 msec
+process 1000 dispatched
+process 1000 added to ready queue after using 100 msec
+process 1001 dispatched
+process 1002 added to ready queue after using 39 msec
+process 1001 added to ready queue after using 100 msec
+process 1003 dispatched
+process 1003 added to ready queue after using 100 msec
+process 1000 dispatched
+process 1000 added to ready queue after using 100 msec
+process 1002 dispatched
+process 1002 waiting
+process 1001 dispatched
+process 1001 added to ready queue after using 100 msec
+process 1003 dispatched
+process 1002 added to ready queue after using 50 msec
+process 1003 added to ready queue after using 100 msec
+process 1000 dispatched
+process 1000 added to ready queue after using 100 msec
+process 1001 dispatched
+process 1001 terminated
+process 1002 dispatched
+process 1002 waiting
+new process 1004 created
+process 1004 added to ready queue after using 0 msec
+process 1003 dispatched
+process 1003 added to ready queue after using 100 msec
+process 1000 dispatched
+process 1000 terminated
+new process 1005 created
+process 1005 added to ready queue after using 0 msec
+process 1004 dispatched
+process 1002 added to ready queue after using 22 msec
+process 1004 added to ready queue after using 100 msec
+process 1003 dispatched
+process 1003 added to ready queue after using 100 msec
+process 1005 dispatched
+process 1005 waiting
+process 1002 dispatched
+process 1002 waiting
+new process 1006 created
+process 1006 added to ready queue after using 0 msec
+process 1004 dispatched
+process 1004 added to ready queue after using 100 msec
+process 1003 dispatched
+process 1003 terminated
+new process 1007 created
+process 1007 added to ready queue after using 0 msec
+process 1006 dispatched
+process 1005 added to ready queue after using 21 msec
+process 1006 added to ready queue after using 100 msec
+process 1004 dispatched
+process 1004 added to ready queue after using 100 msec
+process 1007 dispatched
+process 1002 added to ready queue after using 26 msec
+process 1007 waiting
+process 1005 dispatched
+process 1005 waiting
+process 1006 dispatched
+process 1006 added to ready queue after using 100 msec
+process 1004 dispatched
+process 1004 added to ready queue after using 100 msec
+process 1002 dispatched
+process 1002 terminated
+new process 1008 created
+process 1008 added to ready queue after using 0 msec
+process 1006 dispatched
+process 1007 added to ready queue after using 20 msec
+process 1006 added to ready queue after using 100 msec
+process 1004 dispatched
+process 1005 added to ready queue after using 26 msec
+process 1004 added to ready queue after using 100 msec
+process 1008 dispatched
+process 1008 added to ready queue after using 100 msec
+process 1007 dispatched
+process 1007 waiting
+process 1006 dispatched
+process 1006 added to ready queue after using 100 msec
+process 1005 dispatched
+process 1007 added to ready queue after using 58 msec
+process 1005 waiting
+process 1004 dispatched
+process 1004 terminated
+process 1008 dispatched
+process 1008 added to ready queue after using 100 msec
+process 1006 dispatched
+process 1006 terminated
+new process 1009 created
+process 1009 added to ready queue after using 0 msec
+process 1007 dispatched
+process 1007 waiting
+new process 1010 created
+process 1010 added to ready queue after using 0 msec
+process 1008 dispatched
+process 1005 added to ready queue after using 44 msec
+process 1008 added to ready queue after using 100 msec
+process 1009 dispatched
+process 1007 added to ready queue after using 32 msec
+process 1009 added to ready queue after using 100 msec
+process 1010 dispatched
+process 1010 waiting
+process 1005 dispatched
+process 1005 waiting
+process 1008 dispatched
+process 1008 added to ready queue after using 100 msec
+process 1007 dispatched
+process 1005 added to ready queue after using 37 msec
+process 1007 waiting
+process 1009 dispatched
+process 1010 added to ready queue after using 32 msec
+process 1009 added to ready queue after using 100 msec
+process 1008 dispatched
+process 1008 added to ready queue after using 100 msec
+process 1005 dispatched
+process 1005 waiting
+process 1010 dispatched
+process 1007 added to ready queue after using 21 msec
+process 1010 waiting
+process 1009 dispatched
+process 1009 added to ready queue after using 100 msec
+process 1008 dispatched
+process 1008 terminated
+new process 1011 created
+process 1011 added to ready queue after using 0 msec
+process 1007 dispatched
+process 1007 waiting
+new process 1012 created
+process 1012 added to ready queue after using 0 msec
+process 1009 dispatched
+process 1005 added to ready queue after using 22 msec
+process 1009 added to ready queue after using 100 msec
+process 1011 dispatched
+process 1010 added to ready queue after using 32 msec
+process 1011 waiting
+process 1012 dispatched
+process 1012 added to ready queue after using 100 msec
+process 1005 dispatched
+process 1005 waiting
+process 1009 dispatched
+process 1007 added to ready queue after using 14 msec
+process 1009 added to ready queue after using 100 msec
+process 1010 dispatched
+process 1010 waiting
+process 1012 dispatched
+process 1012 added to ready queue after using 100 msec
+process 1007 dispatched
+process 1007 waiting
+new process 1013 created
+process 1013 added to ready queue after using 0 msec
+process 1009 dispatched
+process 1010 added to ready queue after using 10 msec
+process 1005 added to ready queue after using 38 msec
+process 1011 added to ready queue after using 34 msec
+process 1009 terminated
+process 1012 dispatched
+process 1012 added to ready queue after using 100 msec
+process 1013 dispatched
+process 1013 added to ready queue after using 100 msec
+process 1010 dispatched
+process 1010 waiting
+process 1005 dispatched
+process 1007 added to ready queue after using 14 msec
+process 1005 waiting
+process 1011 dispatched
+process 1011 waiting
+process 1012 dispatched
+process 1012 terminated
+new process 1014 created
+process 1014 added to ready queue after using 0 msec
+process 1013 dispatched
+process 1013 added to ready queue after using 100 msec
+process 1007 dispatched
+process 1007 waiting
+new process 1015 created
+process 1015 added to ready queue after using 0 msec
+process 1014 dispatched
+process 1014 added to ready queue after using 100 msec
+process 1013 dispatched
+process 1011 added to ready queue after using 27 msec
+process 1005 added to ready queue after using 23 msec
+process 1010 added to ready queue after using 32 msec
+process 1013 added to ready queue after using 100 msec
+process 1015 dispatched
+process 1007 added to ready queue after using 21 msec
+process 1015 added to ready queue after using 100 msec
+process 1014 dispatched
+process 1014 added to ready queue after using 100 msec
+process 1011 dispatched
+process 1011 waiting
+process 1005 dispatched
+process 1005 waiting
+process 1010 dispatched
+process 1010 waiting
+process 1013 dispatched
+process 1011 added to ready queue after using 25 msec
+process 1013 terminated
+process 1007 dispatched
+process 1007 waiting
+process 1015 dispatched
+process 1010 added to ready queue after using 48 msec
+process 1005 added to ready queue after using 49 msec
+process 1015 added to ready queue after using 100 msec
+process 1014 dispatched
+process 1014 terminated
+process 1011 dispatched
+process 1011 waiting
+process 1010 dispatched
+process 1010 waiting
+new process 1016 created
+process 1016 added to ready queue after using 0 msec
+process 1005 dispatched
+process 1005 waiting
+new process 1017 created
+process 1017 added to ready queue after using 0 msec
+process 1015 dispatched
+process 1007 added to ready queue after using 22 msec
+process 1015 terminated
+process 1016 dispatched
+process 1016 waiting
+new process 1018 created
+process 1018 added to ready queue after using 0 msec
+process 1017 dispatched
+process 1005 added to ready queue after using 50 msec
+process 1017 added to ready queue after using 100 msec
+process 1007 dispatched
+process 1011 added to ready queue after using 45 msec
+process 1007 waiting
+process 1018 dispatched
+process 1010 added to ready queue after using 34 msec
+process 1018 waiting
+process 1005 dispatched
+process 1005 waiting
+process 1017 dispatched
+process 1016 added to ready queue after using 27 msec
+process 1017 added to ready queue after using 100 msec
+process 1011 dispatched
+process 1011 waiting
+process 1010 dispatched
+process 1010 waiting
+new process 1019 created
+process 1019 added to ready queue after using 0 msec
+process 1016 dispatched
+process 1016 waiting
+new process 1020 created
+process 1020 added to ready queue after using 0 msec
+process 1017 dispatched
+process 1018 added to ready queue after using 47 msec
+process 1007 added to ready queue after using 46 msec
+process 1005 added to ready queue after using 16 msec
+process 1017 added to ready queue after using 100 msec
+process 1019 dispatched
+process 1019 waiting
+process 1020 dispatched
+process 1020 added to ready queue after using 100 msec
+process 1018 dispatched
+process 1018 waiting
+process 1007 dispatched
+process 1011 added to ready queue after using 58 msec
+process 1007 waiting
+process 1005 dispatched
+process 1019 added to ready queue after using 44 msec
+process 1010 added to ready queue after using 13 msec
+process 1005 terminated
+process 1017 dispatched
+process 1016 added to ready queue after using 19 msec
+process 1017 added to ready queue after using 100 msec
+process 1020 dispatched
+process 1007 added to ready queue after using 41 msec
+process 1020 terminated
+process 1011 dispatched
+process 1011 waiting
+process 1019 dispatched
+process 1019 waiting
+process 1010 dispatched
+process 1018 added to ready queue after using 43 msec
+process 1010 waiting
+process 1016 dispatched
+process 1016 waiting
+process 1017 dispatched
+process 1019 added to ready queue after using 52 msec
+process 1017 added to ready queue after using 100 msec
+process 1007 dispatched
+process 1007 waiting
+process 1018 dispatched
+process 1011 added to ready queue after using 28 msec
+process 1018 waiting
+process 1019 dispatched
+process 1019 waiting
+new process 1021 created
+process 1021 added to ready queue after using 0 msec
+process 1017 dispatched
+process 1010 added to ready queue after using 51 msec
+process 1007 added to ready queue after using 50 msec
+process 1017 terminated
+process 1011 dispatched
+process 1018 added to ready queue after using 21 msec
+process 1011 waiting
+process 1021 dispatched
+process 1021 waiting
+process 1010 dispatched
+process 1016 added to ready queue after using 46 msec
+process 1010 waiting
+process 1007 dispatched
+process 1007 waiting
+new process 1022 created
+process 1022 added to ready queue after using 0 msec
+process 1018 dispatched
+process 1018 waiting
+new process 1023 created
+process 1023 added to ready queue after using 0 msec
+process 1016 dispatched
+process 1016 waiting
+new process 1024 created
+process 1024 added to ready queue after using 0 msec
+process 1022 dispatched
+process 1011 added to ready queue after using 41 msec
+process 1019 added to ready queue after using 23 msec
+process 1022 waiting
+process 1023 dispatched
+process 1023 added to ready queue after using 100 msec
+process 1024 dispatched
+process 1021 added to ready queue after using 58 msec
+process 1007 added to ready queue after using 16 msec
+process 1024 waiting
+process 1011 dispatched
+process 1011 waiting
+process 1019 dispatched
+process 1016 added to ready queue after using 14 msec
+process 1019 waiting
+process 1023 dispatched
+process 1018 added to ready queue after using 45 msec
+process 1010 added to ready queue after using 56 msec
+process 1023 added to ready queue after using 100 msec
+process 1021 dispatched
+process 1019 added to ready queue after using 21 msec
+process 1021 waiting
+process 1007 dispatched
+process 1011 added to ready queue after using 17 msec
+process 1007 terminated
+process 1016 dispatched
+process 1022 added to ready queue after using 24 msec
+process 1016 waiting
+process 1018 dispatched
+process 1018 waiting
+process 1010 dispatched
+process 1010 waiting
+process 1023 dispatched
+process 1024 added to ready queue after using 37 msec
+process 1016 added to ready queue after using 33 msec
+process 1023 added to ready queue after using 100 msec
+process 1019 dispatched
+process 1019 waiting
+process 1011 dispatched
+process 1011 waiting
+process 1022 dispatched
+process 1018 added to ready queue after using 13 msec
+process 1022 waiting
+process 1024 dispatched
+process 1021 added to ready queue after using 37 msec
+process 1024 waiting
+process 1016 dispatched
+process 1016 waiting
+process 1023 dispatched
+process 1010 added to ready queue after using 41 msec
+process 1019 added to ready queue after using 26 msec
+process 1023 added to ready queue after using 100 msec
+process 1018 dispatched
+process 1018 waiting
+process 1021 dispatched
+process 1021 waiting
+process 1010 dispatched
+process 1016 added to ready queue after using 57 msec
+process 1011 added to ready queue after using 53 msec
+process 1010 waiting
+process 1019 dispatched
+process 1022 added to ready queue after using 14 msec
+process 1019 waiting
+process 1023 dispatched
+process 1024 added to ready queue after using 55 msec
+process 1018 added to ready queue after using 23 msec
+process 1021 added to ready queue after using 51 msec
+process 1023 waiting
+process 1016 dispatched
+process 1016 waiting
+process 1011 dispatched
+process 1010 added to ready queue after using 48 msec
+process 1011 waiting
+process 1022 dispatched
+process 1022 waiting
+process 1024 dispatched
+process 1024 waiting
+process 1018 dispatched
+process 1023 added to ready queue after using 62 msec
+process 1018 waiting
+process 1021 dispatched
+process 1019 added to ready queue after using 31 msec
+process 1021 waiting
+process 1010 dispatched
+process 1016 added to ready queue after using 38 msec
+process 1010 waiting
+process 1023 dispatched
+process 1011 added to ready queue after using 41 msec
+process 1018 added to ready queue after using 38 msec
+process 1023 added to ready queue after using 100 msec
+process 1019 dispatched
+process 1022 added to ready queue after using 57 msec
+process 1019 waiting
+process 1016 dispatched
+process 1021 added to ready queue after using 58 msec
+process 1016 waiting
+process 1011 dispatched
+process 1024 added to ready queue after using 16 msec
+process 1011 waiting
+process 1018 dispatched
+process 1018 waiting
+process 1023 dispatched
+process 1023 terminated
+process 1022 dispatched
+process 1019 added to ready queue after using 42 msec
+process 1011 added to ready queue after using 57 msec
+process 1022 waiting
+process 1021 dispatched
+process 1021 waiting
+process 1024 dispatched
+process 1010 added to ready queue after using 42 msec
+process 1024 waiting
+process 1019 dispatched
+process 1018 added to ready queue after using 54 msec
+process 1019 waiting
+process 1011 dispatched
+process 1016 added to ready queue after using 37 msec
+process 1011 waiting
+process 1010 dispatched
+process 1010 waiting
+new process 1025 created
+process 1025 added to ready queue after using 0 msec
+process 1018 dispatched
+process 1022 added to ready queue after using 46 msec
+process 1018 terminated
+process 1016 dispatched
+process 1016 waiting
+new process 1026 created
+process 1026 added to ready queue after using 0 msec
+process 1025 dispatched
+process 1025 waiting
+new process 1027 created
+process 1027 added to ready queue after using 0 msec
+process 1022 dispatched
+process 1021 added to ready queue after using 10 msec
+process 1022 terminated
+process 1026 dispatched
+process 1026 waiting
+new process 1028 created
+process 1028 added to ready queue after using 0 msec
+process 1027 dispatched
+process 1011 added to ready queue after using 28 msec
+process 1024 added to ready queue after using 26 msec
+process 1019 added to ready queue after using 52 msec
+process 1025 added to ready queue after using 11 msec
+process 1027 added to ready queue after using 100 msec
+process 1021 dispatched
+process 1021 waiting
+process 1028 dispatched
+process 1010 added to ready queue after using 12 msec
+process 1028 waiting
+process 1011 dispatched
+process 1016 added to ready queue after using 10 msec
+process 1026 added to ready queue after using 46 msec
+process 1011 waiting
+process 1024 dispatched
+process 1024 waiting
+process 1019 dispatched
+process 1019 waiting
+process 1025 dispatched
+process 1025 waiting
+process 1027 dispatched
+process 1011 added to ready queue after using 42 msec
+process 1021 added to ready queue after using 47 msec
+process 1027 terminated
+process 1010 dispatched
+process 1010 waiting
+process 1016 dispatched
+process 1028 added to ready queue after using 53 msec
+process 1016 waiting
+process 1026 dispatched
+process 1024 added to ready queue after using 41 msec
+process 1026 waiting
+process 1011 dispatched
+process 1019 added to ready queue after using 57 msec
+process 1011 waiting
+process 1021 dispatched
+process 1016 added to ready queue after using 55 msec
+process 1021 waiting
+process 1028 dispatched
+process 1028 waiting
+process 1024 dispatched
+process 1025 added to ready queue after using 26 msec
+process 1011 added to ready queue after using 33 msec
+process 1024 waiting
+process 1019 dispatched
+process 1026 added to ready queue after using 52 msec
+process 1010 added to ready queue after using 14 msec
+process 1019 waiting
+process 1016 dispatched
+process 1021 added to ready queue after using 33 msec
+process 1016 waiting
+process 1025 dispatched
+process 1025 waiting
+process 1011 dispatched
+process 1011 waiting
+process 1026 dispatched
+process 1026 waiting
+new process 1029 created
+process 1029 added to ready queue after using 0 msec
+process 1010 dispatched
+process 1010 waiting
+new process 1030 created
+process 1030 added to ready queue after using 0 msec
+process 1021 dispatched
+process 1024 added to ready queue after using 51 msec
+process 1021 waiting
+process 1029 dispatched
+process 1028 added to ready queue after using 16 msec
+process 1019 added to ready queue after using 28 msec
+process 1029 added to ready queue after using 100 msec
+process 1030 dispatched
+process 1025 added to ready queue after using 26 msec
+process 1016 added to ready queue after using 41 msec
+process 1030 waiting
+process 1024 dispatched
+process 1024 waiting
+process 1028 dispatched
+process 1026 added to ready queue after using 13 msec
+process 1011 added to ready queue after using 51 msec
+process 1028 waiting
+process 1019 dispatched
+process 1019 waiting
+process 1029 dispatched
+process 1010 added to ready queue after using 24 msec
+process 1030 added to ready queue after using 49 msec
+process 1021 added to ready queue after using 57 msec
+process 1029 added to ready queue after using 100 msec
+process 1025 dispatched
+process 1028 added to ready queue after using 34 msec
+process 1025 waiting
+process 1016 dispatched
+process 1016 waiting
+process 1026 dispatched
+process 1026 waiting
+process 1011 dispatched
+process 1011 waiting
+process 1010 dispatched
+process 1010 waiting
+process 1030 dispatched
+process 1025 added to ready queue after using 19 msec
+process 1016 added to ready queue after using 17 msec
+process 1024 added to ready queue after using 40 msec
+process 1030 waiting
+process 1021 dispatched
+process 1021 waiting
+process 1029 dispatched
+process 1010 added to ready queue after using 16 msec
+process 1019 added to ready queue after using 18 msec
+process 1029 added to ready queue after using 100 msec
+process 1028 dispatched
+process 1028 waiting
+process 1025 dispatched
+process 1025 waiting
+process 1016 dispatched
+process 1011 added to ready queue after using 24 msec
+process 1026 added to ready queue after using 58 msec
+process 1030 added to ready queue after using 35 msec
+process 1016 waiting
+process 1024 dispatched
+process 1021 added to ready queue after using 40 msec
+process 1024 waiting
+process 1010 dispatched
+process 1010 waiting
+process 1019 dispatched
+process 1019 waiting
+process 1029 dispatched
+process 1016 added to ready queue after using 55 msec
+process 1028 added to ready queue after using 19 msec
+process 1029 added to ready queue after using 100 msec
+process 1011 dispatched
+process 1010 added to ready queue after using 19 msec
+process 1025 added to ready queue after using 56 msec
+process 1011 waiting
+process 1026 dispatched
+process 1024 added to ready queue after using 12 msec
+process 1026 terminated
+process 1030 dispatched
+process 1030 waiting
+process 1021 dispatched
+process 1019 added to ready queue after using 48 msec
+process 1021 waiting
+process 1016 dispatched
+process 1016 waiting
+process 1028 dispatched
+process 1028 waiting
+process 1029 dispatched
+process 1029 added to ready queue after using 100 msec
+process 1010 dispatched
+process 1011 added to ready queue after using 56 msec
+process 1010 waiting
+process 1025 dispatched
+process 1025 waiting
+process 1024 dispatched
+process 1024 waiting
+process 1019 dispatched
+process 1019 waiting
+new process 1031 created
+process 1031 added to ready queue after using 0 msec
+process 1029 dispatched
+process 1025 added to ready queue after using 19 msec
+process 1010 added to ready queue after using 43 msec
+process 1030 added to ready queue after using 16 msec
+process 1028 added to ready queue after using 23 msec
+process 1021 added to ready queue after using 16 msec
+process 1029 terminated
+process 1011 dispatched
+process 1011 terminated
+process 1031 dispatched
+process 1016 added to ready queue after using 29 msec
+process 1031 added to ready queue after using 100 msec
+process 1025 dispatched
+process 1025 waiting
+process 1010 dispatched
+process 1010 waiting
+process 1030 dispatched
+process 1024 added to ready queue after using 51 msec
+process 1030 waiting
+process 1028 dispatched
+process 1028 terminated
+process 1021 dispatched
+process 1019 added to ready queue after using 35 msec
+process 1021 waiting
+process 1016 dispatched
+process 1016 waiting
+process 1031 dispatched
+process 1025 added to ready queue after using 19 msec
+process 1031 added to ready queue after using 100 msec
+process 1024 dispatched
+process 1024 waiting
+process 1019 dispatched
+process 1016 added to ready queue after using 44 msec
+process 1019 waiting
+process 1025 dispatched
+process 1025 waiting
+new process 1032 created
+process 1032 added to ready queue after using 0 msec
+process 1031 dispatched
+process 1010 added to ready queue after using 23 msec
+process 1021 added to ready queue after using 39 msec
+process 1024 added to ready queue after using 15 msec
+process 1030 added to ready queue after using 40 msec
+process 1031 terminated
+process 1016 dispatched
+process 1016 terminated
+process 1032 dispatched
+process 1019 added to ready queue after using 40 msec
+process 1032 added to ready queue after using 100 msec
+process 1010 dispatched
+process 1025 added to ready queue after using 18 msec
+process 1010 waiting
+process 1021 dispatched
+process 1021 waiting
+process 1024 dispatched
+process 1024 waiting
+process 1030 dispatched
+process 1030 waiting
+process 1019 dispatched
+process 1019 waiting
+new process 1033 created
+process 1033 added to ready queue after using 0 msec
+process 1032 dispatched
+process 1010 added to ready queue after using 43 msec
+process 1032 terminated
+process 1025 dispatched
+process 1025 waiting
+new process 1034 created
+process 1034 added to ready queue after using 0 msec
+process 1033 dispatched
+process 1033 waiting
+new process 1035 created
+process 1035 added to ready queue after using 0 msec
+process 1010 dispatched
+process 1010 terminated
+new process 1036 created
+process 1036 added to ready queue after using 0 msec
+process 1034 dispatched
+process 1030 added to ready queue after using 55 msec
+process 1019 added to ready queue after using 26 msec
+process 1021 added to ready queue after using 41 msec
+process 1024 added to ready queue after using 14 msec
+process 1034 added to ready queue after using 100 msec
+process 1035 dispatched
+process 1035 waiting
+process 1036 dispatched
+process 1036 added to ready queue after using 100 msec
+process 1030 dispatched
+process 1030 waiting
+process 1019 dispatched
+process 1025 added to ready queue after using 36 msec
+process 1033 added to ready queue after using 25 msec
+process 1019 waiting
+process 1021 dispatched
+process 1021 waiting
+process 1024 dispatched
+process 1024 waiting
+process 1034 dispatched
+process 1035 added to ready queue after using 35 msec
+process 1030 added to ready queue after using 39 msec
+process 1019 added to ready queue after using 46 msec
+process 1034 added to ready queue after using 100 msec
+process 1036 dispatched
+process 1036 terminated
+process 1025 dispatched
+process 1021 added to ready queue after using 38 msec
+process 1025 waiting
+process 1033 dispatched
+process 1033 waiting
+process 1035 dispatched
+process 1025 added to ready queue after using 51 msec
+process 1035 waiting
+process 1030 dispatched
+process 1024 added to ready queue after using 10 msec
+process 1030 waiting
+process 1019 dispatched
+process 1019 waiting
+process 1034 dispatched
+process 1034 terminated
+process 1021 dispatched
+process 1035 added to ready queue after using 58 msec
+process 1030 added to ready queue after using 46 msec
+process 1033 added to ready queue after using 47 msec
+process 1021 terminated
+process 1025 dispatched
+process 1025 waiting
+process 1024 dispatched
+process 1024 waiting
+process 1035 dispatched
+process 1035 waiting
+new process 1037 created
+process 1037 added to ready queue after using 0 msec
+process 1030 dispatched
+process 1019 added to ready queue after using 24 msec
+process 1030 waiting
+process 1033 dispatched
+process 1033 waiting
+new process 1038 created
+process 1038 added to ready queue after using 0 msec
+process 1037 dispatched
+process 1025 added to ready queue after using 27 msec
+process 1037 added to ready queue after using 100 msec
+process 1019 dispatched
+process 1019 waiting
+process 1038 dispatched
+process 1033 added to ready queue after using 27 msec
+process 1024 added to ready queue after using 45 msec
+process 1038 waiting
+process 1025 dispatched
+process 1035 added to ready queue after using 24 msec
+process 1030 added to ready queue after using 45 msec
+process 1025 waiting
+process 1037 dispatched
+process 1019 added to ready queue after using 52 msec
+process 1037 added to ready queue after using 100 msec
+process 1033 dispatched
+process 1038 added to ready queue after using 52 msec
+process 1033 waiting
+process 1024 dispatched
+process 1024 waiting
+process 1035 dispatched
+process 1035 waiting
+process 1030 dispatched
+process 1030 waiting
+process 1019 dispatched
+process 1019 waiting
+new process 1039 created
+process 1039 added to ready queue after using 0 msec
+process 1037 dispatched
+process 1033 added to ready queue after using 28 msec
+process 1025 added to ready queue after using 29 msec
+process 1030 added to ready queue after using 43 msec
+process 1037 added to ready queue after using 100 msec
+process 1038 dispatched
+process 1024 added to ready queue after using 16 msec
+process 1038 waiting
+process 1039 dispatched
+process 1019 added to ready queue after using 38 msec
+process 1039 added to ready queue after using 100 msec
+process 1033 dispatched
+process 1033 waiting
+process 1025 dispatched
+process 1035 added to ready queue after using 32 msec
+process 1025 waiting
+process 1030 dispatched
+process 1030 waiting
+process 1037 dispatched
+process 1038 added to ready queue after using 59 msec
+process 1037 added to ready queue after using 100 msec
+process 1024 dispatched
+process 1024 waiting
+process 1019 dispatched
+process 1033 added to ready queue after using 37 msec
+process 1019 waiting
+process 1039 dispatched
+process 1030 added to ready queue after using 47 msec
+process 1039 added to ready queue after using 100 msec
+process 1035 dispatched
+process 1025 added to ready queue after using 41 msec
+process 1035 waiting
+process 1038 dispatched
+process 1038 waiting
+process 1037 dispatched
+process 1019 added to ready queue after using 33 msec
+process 1037 terminated
+process 1033 dispatched
+process 1033 waiting
+process 1030 dispatched
+process 1024 added to ready queue after using 41 msec
+process 1030 waiting
+process 1039 dispatched
+process 1039 added to ready queue after using 100 msec
+process 1025 dispatched
+process 1025 waiting
+process 1019 dispatched
+process 1033 added to ready queue after using 18 msec
+process 1038 added to ready queue after using 33 msec
+process 1019 waiting
+process 1024 dispatched
+process 1035 added to ready queue after using 47 msec
+process 1024 waiting
+process 1039 dispatched
+process 1039 added to ready queue after using 100 msec
+process 1033 dispatched
+process 1025 added to ready queue after using 33 msec
+process 1033 waiting
+process 1038 dispatched
+process 1030 added to ready queue after using 53 msec
+process 1038 waiting
+process 1035 dispatched
+process 1019 added to ready queue after using 31 msec
+process 1033 added to ready queue after using 27 msec
+process 1035 waiting
+process 1039 dispatched
+process 1024 added to ready queue after using 58 msec
+process 1038 added to ready queue after using 56 msec
+process 1039 added to ready queue after using 100 msec
+process 1025 dispatched
+process 1025 waiting
+process 1030 dispatched
+process 1035 added to ready queue after using 51 msec
+process 1030 waiting
+process 1019 dispatched
+process 1019 waiting
+process 1033 dispatched
+process 1025 added to ready queue after using 53 msec
+process 1033 waiting
+process 1024 dispatched
+process 1024 waiting
+process 1038 dispatched
+process 1030 added to ready queue after using 36 msec
+process 1038 waiting
+process 1039 dispatched
+process 1039 terminated
+process 1035 dispatched
+process 1035 waiting
+new process 1040 created
+process 1040 added to ready queue after using 0 msec
+process 1025 dispatched
+process 1025 waiting
+new process 1041 created
+process 1041 added to ready queue after using 0 msec
+process 1030 dispatched
+process 1030 waiting
+new process 1042 created
+process 1042 added to ready queue after using 0 msec
+process 1040 dispatched
+process 1024 added to ready queue after using 18 msec
+process 1040 waiting
+process 1041 dispatched
+process 1019 added to ready queue after using 46 msec
+process 1033 added to ready queue after using 43 msec
+process 1038 added to ready queue after using 21 msec
+process 1041 added to ready queue after using 100 msec
+process 1042 dispatched
+process 1035 added to ready queue after using 31 msec
+process 1042 waiting
+process 1024 dispatched
+process 1030 added to ready queue after using 29 msec
+process 1024 waiting
+process 1019 dispatched
+process 1019 waiting
+process 1033 dispatched
+process 1040 added to ready queue after using 55 msec
+process 1033 waiting
+process 1038 dispatched
+process 1025 added to ready queue after using 31 msec
+process 1038 waiting
+process 1041 dispatched
+process 1024 added to ready queue after using 24 msec
+process 1041 added to ready queue after using 100 msec
+process 1035 dispatched
+process 1035 terminated
+process 1030 dispatched
+process 1038 added to ready queue after using 46 msec
+process 1019 added to ready queue after using 55 msec
+process 1030 terminated
+process 1040 dispatched
+process 1040 waiting
+process 1025 dispatched
+process 1042 added to ready queue after using 49 msec
+process 1025 terminated
+process 1024 dispatched
+process 1024 waiting
+process 1041 dispatched
+process 1041 terminated
+process 1038 dispatched
+process 1033 added to ready queue after using 12 msec
+process 1038 waiting
+process 1019 dispatched
+process 1019 waiting
+new process 1043 created
+process 1043 added to ready queue after using 0 msec
+process 1042 dispatched
+process 1042 waiting
+new process 1044 created
+process 1044 added to ready queue after using 0 msec
+process 1033 dispatched
+process 1033 waiting
+new process 1045 created
+process 1045 added to ready queue after using 0 msec
+process 1043 dispatched
+process 1040 added to ready queue after using 14 msec
+process 1043 waiting
+process 1044 dispatched
+process 1033 added to ready queue after using 19 msec
+process 1024 added to ready queue after using 39 msec
+process 1044 added to ready queue after using 100 msec
+process 1045 dispatched
+process 1038 added to ready queue after using 33 msec
+process 1045 added to ready queue after using 100 msec
+process 1040 dispatched
+process 1019 added to ready queue after using 37 msec
+process 1040 waiting
+process 1033 dispatched
+process 1043 added to ready queue after using 51 msec
+process 1042 added to ready queue after using 33 msec
+process 1033 waiting
+process 1024 dispatched
+process 1024 waiting
+process 1044 dispatched
+process 1044 added to ready queue after using 100 msec
+process 1038 dispatched
+process 1038 waiting
+process 1045 dispatched
+process 1024 added to ready queue after using 42 msec
+process 1033 added to ready queue after using 39 msec
+process 1045 terminated
+process 1019 dispatched
+process 1038 added to ready queue after using 21 msec
+process 1019 waiting
+process 1043 dispatched
+process 1040 added to ready queue after using 56 msec
+process 1043 waiting
+process 1042 dispatched
+process 1042 waiting
+process 1044 dispatched
+process 1044 added to ready queue after using 100 msec
+process 1024 dispatched
+process 1024 waiting
+process 1033 dispatched
+process 1043 added to ready queue after using 57 msec
+process 1033 waiting
+process 1038 dispatched
+process 1038 waiting
+process 1040 dispatched
+process 1042 added to ready queue after using 21 msec
+process 1019 added to ready queue after using 46 msec
+process 1040 waiting
+process 1044 dispatched
+process 1033 added to ready queue after using 58 msec
+process 1024 added to ready queue after using 44 msec
+process 1044 added to ready queue after using 100 msec
+process 1043 dispatched
+process 1043 waiting
+process 1042 dispatched
+process 1042 waiting
+process 1019 dispatched
+process 1019 waiting
+process 1033 dispatched
+process 1033 terminated
+new process 1046 created
+process 1046 added to ready queue after using 0 msec
+process 1024 dispatched
+process 1043 added to ready queue after using 22 msec
+process 1024 waiting
+process 1044 dispatched
+process 1040 added to ready queue after using 46 msec
+process 1038 added to ready queue after using 35 msec
+process 1042 added to ready queue after using 36 msec
+process 1044 added to ready queue after using 100 msec
+process 1046 dispatched
+process 1019 added to ready queue after using 22 msec
+process 1046 added to ready queue after using 100 msec
+process 1043 dispatched
+process 1043 waiting
+process 1040 dispatched
+process 1040 waiting
+process 1038 dispatched
+process 1038 waiting
+process 1042 dispatched
+process 1042 waiting
+process 1044 dispatched
+process 1043 added to ready queue after using 30 msec
+process 1024 added to ready queue after using 21 msec
+process 1044 terminated
+process 1019 dispatched
+process 1019 waiting
+process 1046 dispatched
+process 1042 added to ready queue after using 15 msec
+process 1046 added to ready queue after using 100 msec
+process 1043 dispatched
+process 1043 waiting
+process 1024 dispatched
+process 1019 added to ready queue after using 15 msec
+process 1040 added to ready queue after using 39 msec
+process 1024 waiting
+process 1042 dispatched
+process 1042 waiting
+process 1046 dispatched
+process 1038 added to ready queue after using 30 msec
+process 1046 added to ready queue after using 100 msec
+process 1019 dispatched
+process 1024 added to ready queue after using 51 msec
+process 1019 waiting
+process 1040 dispatched
+process 1040 waiting
+process 1038 dispatched
+process 1038 waiting
+new process 1047 created
+process 1047 added to ready queue after using 0 msec
+process 1046 dispatched
+process 1043 added to ready queue after using 25 msec
+process 1040 added to ready queue after using 16 msec
+process 1046 added to ready queue after using 100 msec
+process 1024 dispatched
+process 1042 added to ready queue after using 23 msec
+process 1024 waiting
+process 1047 dispatched
+process 1047 waiting
+process 1043 dispatched
+process 1043 waiting
+process 1040 dispatched
+process 1038 added to ready queue after using 43 msec
+process 1040 waiting
+process 1046 dispatched
+process 1019 added to ready queue after using 33 msec
+process 1024 added to ready queue after using 24 msec
+process 1043 added to ready queue after using 40 msec
+process 1046 added to ready queue after using 100 msec
+process 1042 dispatched
+process 1042 waiting
+process 1038 dispatched
+process 1038 waiting
+process 1019 dispatched
+process 1019 waiting
+process 1024 dispatched
+process 1024 waiting
+new process 1048 created
+process 1048 added to ready queue after using 0 msec
+process 1043 dispatched
+process 1040 added to ready queue after using 54 msec
+process 1047 added to ready queue after using 47 msec
+process 1043 waiting
+process 1046 dispatched
+process 1038 added to ready queue after using 38 msec
+process 1024 added to ready queue after using 26 msec
+process 1046 added to ready queue after using 100 msec
+process 1048 dispatched
+process 1048 waiting
+process 1040 dispatched
+process 1043 added to ready queue after using 44 msec
+process 1040 waiting
+process 1047 dispatched
+process 1019 added to ready queue after using 12 msec
+process 1042 added to ready queue after using 11 msec
+process 1047 waiting
+process 1038 dispatched
+process 1038 waiting
+process 1024 dispatched
+process 1024 waiting
+process 1046 dispatched
+process 1048 added to ready queue after using 50 msec
+process 1040 added to ready queue after using 50 msec
+process 1038 added to ready queue after using 24 msec
+process 1046 added to ready queue after using 100 msec
+process 1043 dispatched
+process 1043 terminated
+process 1019 dispatched
+process 1024 added to ready queue after using 28 msec
+process 1047 added to ready queue after using 11 msec
+process 1019 waiting
+process 1042 dispatched
+process 1042 waiting
+process 1048 dispatched
+process 1048 waiting
+process 1040 dispatched
+process 1040 waiting
+process 1038 dispatched
+process 1038 waiting
+process 1046 dispatched
+process 1042 added to ready queue after using 47 msec
+process 1046 added to ready queue after using 100 msec
+process 1024 dispatched
+process 1019 added to ready queue after using 54 msec
+process 1024 waiting
+process 1047 dispatched
+process 1047 waiting
+process 1042 dispatched
+process 1048 added to ready queue after using 50 msec
+process 1042 waiting
+process 1046 dispatched
+process 1040 added to ready queue after using 32 msec
+process 1024 added to ready queue after using 36 msec
+process 1046 added to ready queue after using 100 msec
+process 1019 dispatched
+process 1038 added to ready queue after using 17 msec
+process 1019 waiting
+process 1048 dispatched
+process 1042 added to ready queue after using 49 msec
+process 1048 waiting
+process 1040 dispatched
+process 1040 waiting
+process 1024 dispatched
+process 1047 added to ready queue after using 25 msec
+process 1024 waiting
+process 1046 dispatched
+process 1046 added to ready queue after using 100 msec
+process 1038 dispatched
+process 1038 waiting
+process 1042 dispatched
+process 1042 waiting
+new process 1049 created
+process 1049 added to ready queue after using 0 msec
+process 1047 dispatched
+process 1019 added to ready queue after using 58 msec
+process 1047 waiting
+process 1046 dispatched
+process 1040 added to ready queue after using 51 msec
+process 1042 added to ready queue after using 18 msec
+process 1048 added to ready queue after using 43 msec
+process 1046 added to ready queue after using 100 msec
+process 1049 dispatched
+process 1038 added to ready queue after using 23 msec
+process 1024 added to ready queue after using 53 msec
+process 1049 added to ready queue after using 100 msec
+process 1019 dispatched
+process 1019 waiting
+process 1040 dispatched
+process 1040 waiting
+process 1042 dispatched
+process 1042 waiting
+process 1048 dispatched
+process 1047 added to ready queue after using 49 msec
+process 1048 waiting
+process 1046 dispatched
+process 1046 added to ready queue after using 100 msec
+process 1038 dispatched
+process 1038 terminated
+process 1024 dispatched
+process 1024 waiting
+process 1049 dispatched
+process 1040 added to ready queue after using 47 msec
+process 1042 added to ready queue after using 28 msec
+process 1048 added to ready queue after using 33 msec
+process 1019 added to ready queue after using 53 msec
+process 1049 added to ready queue after using 100 msec
+process 1047 dispatched
+process 1047 waiting
+process 1046 dispatched
+process 1046 added to ready queue after using 100 msec
+process 1040 dispatched
+process 1040 waiting
+process 1042 dispatched
+process 1042 waiting
+process 1048 dispatched
+process 1048 waiting
+process 1019 dispatched
+process 1024 added to ready queue after using 53 msec
+process 1019 waiting
+process 1049 dispatched
+process 1049 added to ready queue after using 100 msec
+process 1046 dispatched
+process 1047 added to ready queue after using 36 msec
+process 1040 added to ready queue after using 22 msec
+process 1046 terminated
+process 1024 dispatched
+process 1024 waiting
+process 1049 dispatched
+process 1042 added to ready queue after using 26 msec
+process 1048 added to ready queue after using 56 msec
+process 1019 added to ready queue after using 36 msec
+process 1049 added to ready queue after using 100 msec
+process 1047 dispatched
+process 1047 waiting
+process 1040 dispatched
+process 1040 terminated
+process 1042 dispatched
+process 1042 waiting
+process 1048 dispatched
+process 1024 added to ready queue after using 58 msec
+process 1047 added to ready queue after using 43 msec
+process 1048 waiting
+process 1019 dispatched
+process 1019 terminated
+process 1049 dispatched
+process 1049 added to ready queue after using 100 msec
+process 1024 dispatched
+process 1024 waiting
+new process 1050 created
+process 1050 added to ready queue after using 0 msec
+process 1047 dispatched
+process 1047 waiting
+new process 1051 created
+process 1051 added to ready queue after using 0 msec
+process 1049 dispatched
+process 1049 terminated
+new process 1052 created
+process 1052 added to ready queue after using 0 msec
+process 1050 dispatched
+process 1048 added to ready queue after using 40 msec
+process 1042 added to ready queue after using 37 msec
+process 1050 added to ready queue after using 100 msec
+process 1051 dispatched
+process 1051 waiting
+process 1052 dispatched
+process 1024 added to ready queue after using 34 msec
+process 1052 added to ready queue after using 100 msec
+process 1048 dispatched
+process 1047 added to ready queue after using 10 msec
+process 1048 waiting
+process 1042 dispatched
+process 1042 waiting
+process 1050 dispatched
+process 1051 added to ready queue after using 15 msec
+process 1050 added to ready queue after using 100 msec
+process 1024 dispatched
+process 1024 waiting
+process 1052 dispatched
+process 1052 added to ready queue after using 100 msec
+process 1047 dispatched
+process 1042 added to ready queue after using 24 msec
+process 1047 waiting
+process 1051 dispatched
+process 1024 added to ready queue after using 32 msec
+process 1051 waiting
+process 1050 dispatched
+process 1048 added to ready queue after using 23 msec
+process 1050 added to ready queue after using 100 msec
+process 1052 dispatched
+process 1052 terminated
+process 1042 dispatched
+process 1042 waiting
+process 1024 dispatched
+process 1024 waiting
+new process 1053 created
+process 1053 added to ready queue after using 0 msec
+process 1048 dispatched
+process 1047 added to ready queue after using 29 msec
+process 1051 added to ready queue after using 49 msec
+process 1048 waiting
+process 1050 dispatched
+process 1050 waiting
+process 1053 dispatched
+process 1053 added to ready queue after using 100 msec
+process 1047 dispatched
+process 1042 added to ready queue after using 44 msec
+process 1047 waiting
+process 1051 dispatched
+process 1051 waiting
+new process 1054 created
+process 1054 added to ready queue after using 0 msec
+process 1053 dispatched
+process 1024 added to ready queue after using 44 msec
+process 1053 added to ready queue after using 100 msec
+process 1042 dispatched
+process 1042 waiting
+process 1054 dispatched
+process 1050 added to ready queue after using 65 msec
+process 1048 added to ready queue after using 53 msec
+process 1047 added to ready queue after using 15 msec
+process 1054 waiting
+process 1024 dispatched
+process 1024 waiting
+process 1053 dispatched
+process 1051 added to ready queue after using 35 msec
+process 1053 added to ready queue after using 100 msec
+process 1050 dispatched
+process 1042 added to ready queue after using 42 msec
+process 1050 waiting
+process 1048 dispatched
+process 1048 waiting
+process 1047 dispatched
+process 1024 added to ready queue after using 43 msec
+process 1047 waiting
+process 1051 dispatched
+process 1051 waiting
+process 1053 dispatched
+process 1054 added to ready queue after using 59 msec
+process 1050 added to ready queue after using 65 msec
+process 1053 added to ready queue after using 100 msec
+process 1042 dispatched
+process 1042 waiting
+process 1024 dispatched
+process 1047 added to ready queue after using 42 msec
+process 1024 waiting
+process 1054 dispatched
+process 1048 added to ready queue after using 58 msec
+process 1054 waiting
+process 1050 dispatched
+process 1051 added to ready queue after using 37 msec
+process 1050 terminated
+process 1053 dispatched
+process 1054 added to ready queue after using 54 msec
+process 1053 added to ready queue after using 100 msec
+process 1047 dispatched
+process 1042 added to ready queue after using 17 msec
+process 1024 added to ready queue after using 23 msec
+process 1047 waiting
+process 1048 dispatched
+process 1048 waiting
+process 1051 dispatched
+process 1051 terminated
+process 1054 dispatched
+process 1054 waiting
+process 1053 dispatched
+process 1053 terminated
+new process 1055 created
+process 1055 added to ready queue after using 0 msec
+process 1042 dispatched
+process 1042 terminated
+new process 1056 created
+process 1056 added to ready queue after using 0 msec
+process 1024 dispatched
+process 1047 added to ready queue after using 34 msec
+process 1024 waiting
+process 1055 dispatched
+process 1055 waiting
+new process 1057 created
+process 1057 added to ready queue after using 0 msec
+process 1056 dispatched
+process 1054 added to ready queue after using 24 msec
+process 1048 added to ready queue after using 50 msec
+process 1024 added to ready queue after using 39 msec
+process 1056 added to ready queue after using 100 msec
+process 1047 dispatched
+process 1047 waiting
+process 1057 dispatched
+process 1057 waiting
+process 1054 dispatched
+process 1054 waiting
+process 1048 dispatched
+process 1048 waiting
+new process 1058 created
+process 1058 added to ready queue after using 0 msec
+process 1024 dispatched
+process 1024 waiting
+new process 1059 created
+process 1059 added to ready queue after using 0 msec
+process 1056 dispatched
+process 1055 added to ready queue after using 18 msec
+process 1047 added to ready queue after using 53 msec
+process 1054 added to ready queue after using 18 msec
+process 1048 added to ready queue after using 25 msec
+process 1056 terminated
+process 1058 dispatched
+process 1024 added to ready queue after using 36 msec
+process 1057 added to ready queue after using 38 msec
+process 1058 waiting
+process 1059 dispatched
+process 1059 added to ready queue after using 100 msec
+process 1055 dispatched
+process 1055 waiting
+process 1047 dispatched
+process 1047 waiting
+process 1054 dispatched
+process 1054 waiting
+process 1048 dispatched
+process 1048 terminated
+process 1024 dispatched
+process 1024 waiting
+new process 1060 created
+process 1060 added to ready queue after using 0 msec
+process 1057 dispatched
+process 1057 waiting
+new process 1061 created
+process 1061 added to ready queue after using 0 msec
+process 1059 dispatched
+process 1059 terminated
+new process 1062 created
+process 1062 added to ready queue after using 0 msec
+process 1060 dispatched
+process 1060 waiting
+new process 1063 created
+process 1063 added to ready queue after using 0 msec
+process 1061 dispatched
+process 1058 added to ready queue after using 59 msec
+process 1055 added to ready queue after using 40 msec
+process 1057 added to ready queue after using 37 msec
+process 1061 waiting
+process 1062 dispatched
+process 1062 waiting
+process 1063 dispatched
+process 1047 added to ready queue after using 37 msec
+process 1063 waiting
+process 1058 dispatched
+process 1024 added to ready queue after using 25 msec
+process 1058 waiting
+process 1055 dispatched
+process 1054 added to ready queue after using 27 msec
+process 1055 waiting
+process 1057 dispatched
+process 1057 waiting
+process 1047 dispatched
+process 1047 terminated
+new process 1064 created
+process 1064 added to ready queue after using 0 msec
+process 1024 dispatched
+process 1058 added to ready queue after using 24 msec
+process 1024 waiting
+process 1054 dispatched
+process 1062 added to ready queue after using 40 msec
+process 1054 waiting
+process 1064 dispatched
+process 1063 added to ready queue after using 53 msec
+process 1064 waiting
+process 1058 dispatched
+process 1060 added to ready queue after using 55 msec
+process 1061 added to ready queue after using 27 msec
+process 1058 waiting
+process 1062 dispatched
+process 1062 waiting
+process 1063 dispatched
+process 1024 added to ready queue after using 55 msec
+process 1063 waiting
+process 1060 dispatched
+process 1058 added to ready queue after using 46 msec
+process 1060 waiting
+process 1061 dispatched
+process 1057 added to ready queue after using 16 msec
+process 1061 waiting
+process 1024 dispatched
+process 1054 added to ready queue after using 49 msec
+process 1055 added to ready queue after using 35 msec
+process 1024 waiting
+process 1058 dispatched
+process 1058 waiting
+process 1057 dispatched
+process 1063 added to ready queue after using 34 msec
+process 1057 waiting
+process 1054 dispatched
+process 1064 added to ready queue after using 40 msec
+process 1054 waiting
+process 1055 dispatched
+process 1062 added to ready queue after using 43 msec
+process 1055 waiting
+process 1063 dispatched
+process 1061 added to ready queue after using 16 msec
+process 1063 waiting
+process 1064 dispatched
+process 1057 added to ready queue after using 11 msec
+process 1064 waiting
+process 1062 dispatched
+process 1058 added to ready queue after using 13 msec
+process 1060 added to ready queue after using 36 msec
+process 1062 waiting
+process 1061 dispatched
+process 1054 added to ready queue after using 43 msec
+process 1024 added to ready queue after using 29 msec
+process 1061 waiting
+process 1057 dispatched
+process 1063 added to ready queue after using 37 msec
+process 1055 added to ready queue after using 11 msec
+process 1057 waiting
+process 1058 dispatched
+process 1064 added to ready queue after using 30 msec
+process 1058 waiting
+process 1060 dispatched
+process 1060 waiting
+process 1054 dispatched
+process 1054 terminated
+process 1024 dispatched
+process 1024 terminated
+process 1063 dispatched
+process 1057 added to ready queue after using 34 msec
+process 1063 waiting
+process 1055 dispatched
+process 1055 waiting
+new process 1065 created
+process 1065 added to ready queue after using 0 msec
+process 1064 dispatched
+process 1064 waiting
+new process 1066 created
+process 1066 added to ready queue after using 0 msec
+process 1057 dispatched
+process 1062 added to ready queue after using 42 msec
+process 1057 waiting
+process 1065 dispatched
+process 1065 waiting
+new process 1067 created
+process 1067 added to ready queue after using 0 msec
+process 1066 dispatched
+process 1061 added to ready queue after using 51 msec
+process 1055 added to ready queue after using 21 msec
+process 1058 added to ready queue after using 50 msec
+process 1066 added to ready queue after using 100 msec
+process 1062 dispatched
+process 1062 waiting
+process 1067 dispatched
+process 1057 added to ready queue after using 41 msec
+process 1060 added to ready queue after using 10 msec
+process 1067 waiting
+process 1061 dispatched
+process 1063 added to ready queue after using 12 msec
+process 1061 waiting
+process 1055 dispatched
+process 1062 added to ready queue after using 17 msec
+process 1064 added to ready queue after using 29 msec
+process 1055 waiting
+process 1058 dispatched
+process 1058 waiting
+process 1066 dispatched
+process 1067 added to ready queue after using 91 msec
+process 1065 added to ready queue after using 30 msec
+process 1066 added to ready queue after using 100 msec
+process 1057 dispatched
+process 1057 terminated
+process 1060 dispatched
+process 1058 added to ready queue after using 29 msec
+process 1060 terminated
+process 1063 dispatched
+process 1063 waiting
+process 1062 dispatched
+process 1062 waiting
+process 1064 dispatched
+process 1055 added to ready queue after using 54 msec
+process 1064 waiting
+process 1067 dispatched
+process 1061 added to ready queue after using 31 msec
+process 1062 added to ready queue after using 34 msec
+process 1067 added to ready queue after using 100 msec
+process 1065 dispatched
+process 1063 added to ready queue after using 20 msec
+process 1065 waiting
+process 1066 dispatched
+process 1064 added to ready queue after using 43 msec
+process 1066 added to ready queue after using 100 msec
+process 1058 dispatched
+process 1058 waiting
+process 1055 dispatched
+process 1055 waiting
+process 1061 dispatched
+process 1061 waiting
+process 1062 dispatched
+process 1062 waiting
+process 1067 dispatched
+process 1058 added to ready queue after using 26 msec
+process 1065 added to ready queue after using 45 msec
+process 1067 added to ready queue after using 100 msec
+process 1063 dispatched
+process 1062 added to ready queue after using 44 msec
+process 1055 added to ready queue after using 50 msec
+process 1063 waiting
+process 1064 dispatched
+process 1061 added to ready queue after using 26 msec
+process 1064 waiting
+process 1066 dispatched
+process 1066 added to ready queue after using 100 msec
+process 1058 dispatched
+process 1058 waiting
+process 1065 dispatched
+process 1065 waiting
+process 1067 dispatched
+process 1063 added to ready queue after using 42 msec
+process 1067 waiting
+process 1062 dispatched
+process 1062 waiting
+process 1055 dispatched
+process 1064 added to ready queue after using 38 msec
+process 1055 waiting
+process 1061 dispatched
+process 1061 waiting
+process 1066 dispatched
+process 1058 added to ready queue after using 32 msec
+process 1066 terminated
+process 1063 dispatched
+process 1065 added to ready queue after using 21 msec
+process 1063 waiting
+process 1064 dispatched
+process 1062 added to ready queue after using 31 msec
+process 1064 waiting
+process 1058 dispatched
+process 1055 added to ready queue after using 27 msec
+process 1058 waiting
+process 1065 dispatched
+process 1067 added to ready queue after using 65 msec
+process 1065 waiting
+process 1062 dispatched
+process 1062 waiting
+new process 1068 created
+process 1068 added to ready queue after using 0 msec
+process 1055 dispatched
+process 1055 waiting
+new process 1069 created
+process 1069 added to ready queue after using 0 msec
+process 1067 dispatched
+process 1058 added to ready queue after using 14 msec
+process 1067 terminated
+process 1068 dispatched
+process 1061 added to ready queue after using 41 msec
+process 1068 waiting
+process 1069 dispatched
+process 1062 added to ready queue after using 23 msec
+process 1069 waiting
+process 1058 dispatched
+process 1063 added to ready queue after using 29 msec
+process 1064 added to ready queue after using 32 msec
+process 1058 waiting
+process 1061 dispatched
+process 1068 added to ready queue after using 42 msec
+process 1065 added to ready queue after using 42 msec
+process 1061 waiting
+process 1062 dispatched
+process 1069 added to ready queue after using 36 msec
+process 1062 waiting
+process 1063 dispatched
+process 1063 terminated
+process 1064 dispatched
+process 1055 added to ready queue after using 59 msec
+process 1061 added to ready queue after using 54 msec
+process 1064 waiting
+process 1068 dispatched
+process 1068 waiting
+process 1065 dispatched
+process 1062 added to ready queue after using 53 msec
+process 1065 waiting
+process 1069 dispatched
+process 1069 waiting
+process 1055 dispatched
+process 1068 added to ready queue after using 12 msec
+process 1064 added to ready queue after using 44 msec
+process 1055 waiting
+process 1061 dispatched
+process 1061 waiting
+process 1062 dispatched
+process 1058 added to ready queue after using 53 msec
+process 1065 added to ready queue after using 48 msec
+process 1062 waiting
+process 1068 dispatched
+process 1068 waiting
+process 1064 dispatched
+process 1064 waiting
+new process 1070 created
+process 1070 added to ready queue after using 0 msec
+process 1058 dispatched
+process 1055 added to ready queue after using 53 msec
+process 1058 waiting
+process 1065 dispatched
+process 1069 added to ready queue after using 13 msec
+process 1065 waiting
+process 1070 dispatched
+process 1064 added to ready queue after using 52 msec
+process 1070 added to ready queue after using 100 msec
+process 1055 dispatched
+process 1055 waiting
+process 1069 dispatched
+process 1062 added to ready queue after using 38 msec
+process 1065 added to ready queue after using 16 msec
+process 1061 added to ready queue after using 49 msec
+process 1069 waiting
+process 1064 dispatched
+process 1058 added to ready queue after using 56 msec
+process 1064 waiting
+process 1070 dispatched
+process 1068 added to ready queue after using 21 msec
+process 1055 added to ready queue after using 12 msec
+process 1070 added to ready queue after using 100 msec
+process 1062 dispatched
+process 1064 added to ready queue after using 30 msec
+process 1062 waiting
+process 1065 dispatched
+process 1065 waiting
+process 1061 dispatched
+process 1061 waiting
+process 1058 dispatched
+process 1058 waiting
+process 1068 dispatched
+process 1069 added to ready queue after using 35 msec
+process 1068 waiting
+process 1055 dispatched
+process 1062 added to ready queue after using 34 msec
+process 1055 waiting
+process 1070 dispatched
+process 1070 added to ready queue after using 100 msec
+process 1064 dispatched
+process 1064 waiting
+process 1069 dispatched
+process 1069 waiting
+new process 1071 created
+process 1071 added to ready queue after using 0 msec
+process 1062 dispatched
+process 1062 waiting
+new process 1072 created
+process 1072 added to ready queue after using 0 msec
+process 1070 dispatched
+process 1065 added to ready queue after using 23 msec
+process 1061 added to ready queue after using 30 msec
+process 1070 added to ready queue after using 100 msec
+process 1071 dispatched
+process 1058 added to ready queue after using 37 msec
+process 1068 added to ready queue after using 36 msec
+process 1071 added to ready queue after using 100 msec
+process 1072 dispatched
+process 1055 added to ready queue after using 31 msec
+process 1072 waiting
+process 1065 dispatched
+process 1065 waiting
+process 1061 dispatched
+process 1062 added to ready queue after using 20 msec
+process 1064 added to ready queue after using 17 msec
+process 1061 waiting
+process 1070 dispatched
+process 1069 added to ready queue after using 29 msec
+process 1070 terminated
+process 1058 dispatched
+process 1058 terminated
+process 1068 dispatched
+process 1068 waiting
+process 1071 dispatched
+process 1072 added to ready queue after using 19 msec
+process 1065 added to ready queue after using 37 msec
+process 1071 added to ready queue after using 100 msec
+process 1055 dispatched
+process 1055 waiting
+process 1062 dispatched
+process 1062 waiting
+process 1064 dispatched
+process 1064 terminated
+process 1069 dispatched
+process 1061 added to ready queue after using 45 msec
+process 1068 added to ready queue after using 27 msec
+process 1069 waiting
+process 1072 dispatched
+process 1072 waiting
+process 1065 dispatched
+process 1065 waiting
+process 1071 dispatched
+process 1062 added to ready queue after using 49 msec
+process 1055 added to ready queue after using 18 msec
+process 1069 added to ready queue after using 53 msec
+process 1071 added to ready queue after using 100 msec
+process 1061 dispatched
+process 1061 waiting
+process 1068 dispatched
+process 1068 waiting
+process 1062 dispatched
+process 1072 added to ready queue after using 24 msec
+process 1065 added to ready queue after using 44 msec
+process 1062 waiting
+process 1055 dispatched
+process 1055 terminated
+process 1069 dispatched
+process 1069 waiting
+process 1071 dispatched
+process 1071 added to ready queue after using 100 msec
+process 1072 dispatched
+process 1068 added to ready queue after using 20 msec
+process 1072 waiting
+process 1065 dispatched
+process 1061 added to ready queue after using 35 msec
+process 1065 waiting
+process 1071 dispatched
+process 1069 added to ready queue after using 24 msec
+process 1071 terminated
+process 1068 dispatched
+process 1062 added to ready queue after using 56 msec
+process 1068 waiting
+process 1061 dispatched
+process 1072 added to ready queue after using 53 msec
+process 1061 waiting
+process 1069 dispatched
+process 1069 waiting
+new process 1073 created
+process 1073 added to ready queue after using 0 msec
+process 1062 dispatched
+process 1062 terminated
+new process 1074 created
+process 1074 added to ready queue after using 0 msec
+process 1072 dispatched
+process 1068 added to ready queue after using 28 msec
+process 1072 waiting
+process 1073 dispatched
+process 1065 added to ready queue after using 56 msec
+process 1073 added to ready queue after using 100 msec
+process 1074 dispatched
+process 1074 waiting
+process 1068 dispatched
+process 1068 waiting
+new process 1075 created
+process 1075 added to ready queue after using 0 msec
+process 1065 dispatched
+process 1065 waiting
+new process 1076 created
+process 1076 added to ready queue after using 0 msec
+process 1073 dispatched
+process 1061 added to ready queue after using 35 msec
+process 1073 waiting
+process 1075 dispatched
+process 1069 added to ready queue after using 26 msec
+process 1072 added to ready queue after using 55 msec
+process 1075 added to ready queue after using 100 msec
+process 1076 dispatched
+process 1076 waiting
+process 1061 dispatched
+process 1073 added to ready queue after using 70 msec
+process 1068 added to ready queue after using 19 msec
+process 1061 waiting
+process 1069 dispatched
+process 1069 waiting
+process 1072 dispatched
+process 1074 added to ready queue after using 58 msec
+process 1072 terminated
+process 1075 dispatched
+process 1065 added to ready queue after using 15 msec
+process 1076 added to ready queue after using 17 msec
+process 1075 terminated
+process 1073 dispatched
+process 1061 added to ready queue after using 33 msec
+process 1069 added to ready queue after using 26 msec
+process 1073 added to ready queue after using 100 msec
+process 1068 dispatched
+process 1068 terminated
+process 1074 dispatched
+process 1074 waiting
+process 1065 dispatched
+process 1065 terminated
+process 1076 dispatched
+process 1076 waiting
+process 1061 dispatched
+process 1061 terminated
+new process 1077 created
+process 1077 added to ready queue after using 0 msec
+process 1069 dispatched
+process 1074 added to ready queue after using 48 msec
+process 1069 waiting
+process 1073 dispatched
+process 1073 added to ready queue after using 100 msec
+process 1077 dispatched
+process 1069 added to ready queue after using 12 msec
+process 1077 added to ready queue after using 100 msec
+process 1074 dispatched
+process 1074 waiting
+process 1073 dispatched
+process 1076 added to ready queue after using 49 msec
+process 1073 added to ready queue after using 100 msec
+process 1069 dispatched
+process 1069 waiting
+process 1077 dispatched
+process 1074 added to ready queue after using 13 msec
+process 1077 added to ready queue after using 100 msec
+process 1076 dispatched
+process 1076 waiting
+process 1073 dispatched
+process 1069 added to ready queue after using 10 msec
+process 1073 waiting
+process 1074 dispatched
+process 1074 waiting
+new process 1078 created
+process 1078 added to ready queue after using 0 msec
+process 1077 dispatched
+process 1077 added to ready queue after using 100 msec
+process 1069 dispatched
+process 1069 waiting
+new process 1079 created
+process 1079 added to ready queue after using 0 msec
+process 1078 dispatched
+process 1076 added to ready queue after using 14 msec
+process 1078 waiting
+process 1077 dispatched
+process 1077 waiting
+new process 1080 created
+process 1080 added to ready queue after using 0 msec
+process 1079 dispatched
+process 1079 waiting
+new process 1081 created
+process 1081 added to ready queue after using 0 msec
+process 1076 dispatched
+process 1073 added to ready queue after using 72 msec
+process 1076 waiting
+process 1080 dispatched
+process 1069 added to ready queue after using 37 msec
+process 1074 added to ready queue after using 59 msec
+process 1080 added to ready queue after using 100 msec
+process 1081 dispatched
+process 1078 added to ready queue after using 40 msec
+process 1076 added to ready queue after using 49 msec
+process 1077 added to ready queue after using 46 msec
+process 1081 added to ready queue after using 100 msec
+process 1073 dispatched
+process 1079 added to ready queue after using 40 msec
+process 1073 terminated
+process 1069 dispatched
+process 1069 waiting
+process 1074 dispatched
+process 1074 waiting
+process 1080 dispatched
+process 1080 added to ready queue after using 100 msec
+process 1078 dispatched
+process 1069 added to ready queue after using 35 msec
+process 1078 waiting
+process 1076 dispatched
+process 1076 waiting
+process 1077 dispatched
+process 1074 added to ready queue after using 27 msec
+process 1077 added to ready queue after using 100 msec
+process 1081 dispatched
+process 1078 added to ready queue after using 28 msec
+process 1081 added to ready queue after using 100 msec
+process 1079 dispatched
+process 1076 added to ready queue after using 33 msec
+process 1079 waiting
+process 1080 dispatched
+process 1080 added to ready queue after using 100 msec
+process 1069 dispatched
+process 1069 waiting
+process 1074 dispatched
+process 1074 terminated
+process 1077 dispatched
+process 1079 added to ready queue after using 36 msec
+process 1077 added to ready queue after using 100 msec
+process 1078 dispatched
+process 1078 waiting
+process 1081 dispatched
+process 1081 terminated
+process 1076 dispatched
+process 1076 waiting
+process 1080 dispatched
+process 1069 added to ready queue after using 16 msec
+process 1080 added to ready queue after using 100 msec
+process 1079 dispatched
+process 1079 waiting
+process 1077 dispatched
+process 1077 waiting
+new process 1082 created
+process 1082 added to ready queue after using 0 msec
+process 1069 dispatched
+process 1069 terminated
+new process 1083 created
+process 1083 added to ready queue after using 0 msec
+process 1080 dispatched
+process 1078 added to ready queue after using 44 msec
+process 1076 added to ready queue after using 26 msec
+process 1080 terminated
+process 1082 dispatched
+process 1082 waiting
+process 1083 dispatched
+process 1083 waiting
+new process 1084 created
+process 1084 added to ready queue after using 0 msec
+process 1078 dispatched
+process 1079 added to ready queue after using 10 msec
+process 1078 waiting
+process 1076 dispatched
+process 1082 added to ready queue after using 23 msec
+process 1076 waiting
+process 1084 dispatched
+process 1084 waiting
+new process 1085 created
+process 1085 added to ready queue after using 0 msec
+process 1079 dispatched
+process 1077 added to ready queue after using 41 msec
+process 1083 added to ready queue after using 56 msec
+process 1079 waiting
+process 1082 dispatched
+process 1076 added to ready queue after using 42 msec
+process 1082 waiting
+process 1085 dispatched
+process 1084 added to ready queue after using 29 msec
+process 1085 added to ready queue after using 100 msec
+process 1077 dispatched
+process 1078 added to ready queue after using 25 msec
+process 1077 added to ready queue after using 100 msec
+process 1083 dispatched
+process 1083 waiting
+process 1076 dispatched
+process 1076 waiting
+process 1084 dispatched
+process 1084 waiting
+process 1085 dispatched
+process 1079 added to ready queue after using 32 msec
+process 1082 added to ready queue after using 46 msec
+process 1085 added to ready queue after using 100 msec
+process 1078 dispatched
+process 1078 waiting
+process 1077 dispatched
+process 1077 waiting
+process 1079 dispatched
+process 1076 added to ready queue after using 18 msec
+process 1084 added to ready queue after using 13 msec
+process 1083 added to ready queue after using 20 msec
+process 1079 waiting
+process 1082 dispatched
+process 1082 waiting
+process 1085 dispatched
+process 1085 terminated
+process 1076 dispatched
+process 1078 added to ready queue after using 24 msec
+process 1076 waiting
+process 1084 dispatched
+process 1077 added to ready queue after using 85 msec
+process 1084 waiting
+process 1083 dispatched
+process 1083 waiting
+new process 1086 created
+process 1086 added to ready queue after using 0 msec
+process 1078 dispatched
+process 1078 waiting
+new process 1087 created
+process 1087 added to ready queue after using 0 msec
+process 1077 dispatched
+process 1076 added to ready queue after using 28 msec
+process 1077 waiting
+process 1086 dispatched
+process 1086 waiting
+new process 1088 created
+process 1088 added to ready queue after using 0 msec
+process 1087 dispatched
+process 1079 added to ready queue after using 59 msec
+process 1082 added to ready queue after using 13 msec
+process 1083 added to ready queue after using 37 msec
+process 1087 added to ready queue after using 100 msec
+process 1076 dispatched
+process 1086 added to ready queue after using 27 msec
+process 1084 added to ready queue after using 58 msec
+process 1076 waiting
+process 1088 dispatched
+process 1088 waiting
+process 1079 dispatched
+process 1078 added to ready queue after using 26 msec
+process 1079 waiting
+process 1082 dispatched
+process 1082 waiting
+process 1083 dispatched
+process 1083 waiting
+process 1087 dispatched
+process 1077 added to ready queue after using 55 msec
+process 1076 added to ready queue after using 47 msec
+process 1082 added to ready queue after using 40 msec
+process 1087 added to ready queue after using 100 msec
+process 1086 dispatched
+process 1086 waiting
+process 1084 dispatched
+process 1088 added to ready queue after using 26 msec
+process 1084 waiting
+process 1078 dispatched
+process 1083 added to ready queue after using 36 msec
+process 1078 terminated
+process 1077 dispatched
+process 1079 added to ready queue after using 14 msec
+process 1077 added to ready queue after using 100 msec
+process 1076 dispatched
+process 1076 waiting
+process 1082 dispatched
+process 1082 waiting
+process 1087 dispatched
+process 1084 added to ready queue after using 32 msec
+process 1087 added to ready queue after using 100 msec
+process 1088 dispatched
+process 1086 added to ready queue after using 36 msec
+process 1088 waiting
+process 1083 dispatched
+process 1082 added to ready queue after using 33 msec
+process 1076 added to ready queue after using 42 msec
+process 1083 waiting
+process 1079 dispatched
+process 1079 waiting
+process 1077 dispatched
+process 1088 added to ready queue after using 31 msec
+process 1077 waiting
+process 1084 dispatched
+process 1084 waiting
+process 1087 dispatched
+process 1079 added to ready queue after using 12 msec
+process 1087 added to ready queue after using 100 msec
+process 1086 dispatched
+process 1086 waiting
+process 1082 dispatched
+process 1082 waiting
+process 1076 dispatched
+process 1077 added to ready queue after using 51 msec
+process 1076 waiting
+process 1088 dispatched
+process 1084 added to ready queue after using 16 msec
+process 1088 waiting
+process 1079 dispatched
+process 1079 waiting
+process 1087 dispatched
+process 1083 added to ready queue after using 57 msec
+process 1086 added to ready queue after using 33 msec
+process 1087 terminated
+process 1077 dispatched
+process 1088 added to ready queue after using 20 msec
+process 1077 waiting
+process 1084 dispatched
+process 1084 terminated
+process 1083 dispatched
+process 1083 waiting
+new process 1089 created
+process 1089 added to ready queue after using 0 msec
+process 1086 dispatched
+process 1082 added to ready queue after using 28 msec
+process 1079 added to ready queue after using 13 msec
+process 1086 waiting
+process 1088 dispatched
+process 1076 added to ready queue after using 17 msec
+process 1088 waiting
+process 1089 dispatched
+process 1077 added to ready queue after using 67 msec
+process 1089 added to ready queue after using 100 msec
+process 1082 dispatched
+process 1082 waiting
+process 1079 dispatched
+process 1079 waiting
+process 1076 dispatched
+process 1086 added to ready queue after using 41 msec
+process 1076 waiting
+process 1077 dispatched
+process 1082 added to ready queue after using 16 msec
+process 1077 added to ready queue after using 100 msec
+process 1089 dispatched
+process 1083 added to ready queue after using 23 msec
+process 1079 added to ready queue after using 21 msec
+process 1088 added to ready queue after using 14 msec
+process 1089 added to ready queue after using 100 msec
+process 1086 dispatched
+process 1086 waiting
+process 1082 dispatched
+process 1082 waiting
+process 1077 dispatched
+process 1076 added to ready queue after using 34 msec
+process 1077 terminated
+process 1083 dispatched
+process 1086 added to ready queue after using 48 msec
+process 1083 waiting
+process 1079 dispatched
+process 1079 waiting
+process 1088 dispatched
+process 1088 waiting
+process 1089 dispatched
+process 1089 added to ready queue after using 100 msec
+process 1076 dispatched
+process 1083 added to ready queue after using 54 msec
+process 1076 waiting
+process 1086 dispatched
+process 1082 added to ready queue after using 42 msec
+process 1086 waiting
+process 1089 dispatched
+process 1079 added to ready queue after using 18 msec
+process 1089 added to ready queue after using 100 msec
+process 1083 dispatched
+process 1083 waiting
+process 1082 dispatched
+process 1082 waiting
+new process 1090 created
+process 1090 added to ready queue after using 0 msec
+process 1079 dispatched
+process 1088 added to ready queue after using 13 msec
+process 1076 added to ready queue after using 47 msec
+process 1079 waiting
+process 1089 dispatched
+process 1083 added to ready queue after using 13 msec
+process 1089 added to ready queue after using 100 msec
+process 1090 dispatched
+process 1086 added to ready queue after using 39 msec
+process 1082 added to ready queue after using 59 msec
+process 1090 added to ready queue after using 100 msec
+process 1088 dispatched
+process 1088 waiting
+process 1076 dispatched
+process 1079 added to ready queue after using 21 msec
+process 1076 waiting
+process 1083 dispatched
+process 1083 waiting
+process 1089 dispatched
+process 1089 terminated
+process 1086 dispatched
+process 1086 waiting
+process 1082 dispatched
+process 1076 added to ready queue after using 21 msec
+process 1082 waiting
+process 1090 dispatched
+process 1088 added to ready queue after using 23 msec
+process 1090 waiting
+process 1079 dispatched
+process 1086 added to ready queue after using 21 msec
+process 1079 waiting
+process 1076 dispatched
+process 1076 waiting
+new process 1091 created
+process 1091 added to ready queue after using 0 msec
+process 1088 dispatched
+process 1088 waiting
+new process 1092 created
+process 1092 added to ready queue after using 0 msec
+process 1086 dispatched
+process 1086 waiting
+new process 1093 created
+process 1093 added to ready queue after using 0 msec
+process 1091 dispatched
+process 1076 added to ready queue after using 23 msec
+process 1082 added to ready queue after using 33 msec
+process 1083 added to ready queue after using 27 msec
+process 1091 added to ready queue after using 100 msec
+process 1092 dispatched
+process 1090 added to ready queue after using 58 msec
+process 1092 waiting
+process 1093 dispatched
+process 1079 added to ready queue after using 20 msec
+process 1088 added to ready queue after using 53 msec
+process 1093 added to ready queue after using 100 msec
+process 1076 dispatched
+process 1076 waiting
+process 1082 dispatched
+process 1086 added to ready queue after using 34 msec
+process 1082 waiting
+process 1083 dispatched
+process 1083 waiting
+process 1091 dispatched
+process 1092 added to ready queue after using 62 msec
+process 1091 added to ready queue after using 100 msec
+process 1090 dispatched
+process 1082 added to ready queue after using 22 msec
+process 1076 added to ready queue after using 43 msec
+process 1090 added to ready queue after using 100 msec
+process 1079 dispatched
+process 1079 waiting
+process 1088 dispatched
+process 1083 added to ready queue after using 52 msec
+process 1088 waiting
+process 1093 dispatched
+process 1093 added to ready queue after using 100 msec
+process 1086 dispatched
+process 1086 waiting
+process 1092 dispatched
+process 1092 waiting
+process 1091 dispatched
+process 1088 added to ready queue after using 11 msec
+process 1091 terminated
+process 1082 dispatched
+process 1082 waiting
+process 1076 dispatched
+process 1076 waiting
+process 1090 dispatched
+process 1079 added to ready queue after using 56 msec
+process 1086 added to ready queue after using 50 msec
+process 1092 added to ready queue after using 45 msec
+process 1090 added to ready queue after using 100 msec
+process 1083 dispatched
+process 1083 waiting
+process 1093 dispatched
+process 1093 added to ready queue after using 100 msec
+process 1088 dispatched
+process 1088 waiting
+process 1079 dispatched
+process 1079 waiting
+process 1086 dispatched
+process 1083 added to ready queue after using 26 msec
+process 1076 added to ready queue after using 31 msec
+process 1086 terminated
+process 1092 dispatched
+process 1082 added to ready queue after using 20 msec
+process 1079 added to ready queue after using 11 msec
+process 1088 added to ready queue after using 55 msec
+process 1092 terminated
+process 1090 dispatched
+process 1090 added to ready queue after using 100 msec
+process 1093 dispatched
+process 1093 added to ready queue after using 100 msec
+process 1083 dispatched
+process 1083 waiting
+process 1076 dispatched
+process 1076 waiting
+process 1082 dispatched
+process 1082 waiting
+process 1079 dispatched
+process 1079 waiting
+process 1088 dispatched
+process 1088 waiting
+new process 1094 created
+process 1094 added to ready queue after using 0 msec
+process 1090 dispatched
+process 1076 added to ready queue after using 25 msec
+process 1083 added to ready queue after using 44 msec
+process 1090 added to ready queue after using 100 msec
+process 1093 dispatched
+process 1093 terminated
+process 1094 dispatched
+process 1082 added to ready queue after using 32 msec
+process 1088 added to ready queue after using 27 msec
+process 1094 waiting
+process 1076 dispatched
+process 1076 waiting
+process 1083 dispatched
+process 1079 added to ready queue after using 55 msec
+process 1083 waiting
+process 1090 dispatched
+process 1090 added to ready queue after using 100 msec
+process 1082 dispatched
+process 1082 waiting
+process 1088 dispatched
+process 1088 terminated
+new process 1095 created
+process 1095 added to ready queue after using 0 msec
+process 1079 dispatched
+process 1094 added to ready queue after using 25 msec
+process 1079 terminated
+process 1090 dispatched
+process 1083 added to ready queue after using 29 msec
+process 1090 added to ready queue after using 100 msec
+process 1095 dispatched
+process 1076 added to ready queue after using 27 msec
+process 1095 added to ready queue after using 100 msec
+process 1094 dispatched
+process 1094 waiting
+process 1083 dispatched
+process 1083 waiting
+process 1090 dispatched
+process 1082 added to ready queue after using 10 msec
+process 1090 added to ready queue after using 100 msec
+process 1076 dispatched
+process 1094 added to ready queue after using 31 msec
+process 1076 waiting
+process 1095 dispatched
+process 1095 added to ready queue after using 100 msec
+process 1082 dispatched
+process 1082 waiting
+process 1090 dispatched
+process 1083 added to ready queue after using 32 msec
+process 1090 added to ready queue after using 100 msec
+process 1094 dispatched
+process 1094 waiting
+process 1095 dispatched
+process 1082 added to ready queue after using 14 msec
+process 1076 added to ready queue after using 45 msec
+process 1095 added to ready queue after using 100 msec
+process 1083 dispatched
+process 1083 waiting
+process 1090 dispatched
+process 1094 added to ready queue after using 22 msec
+process 1090 added to ready queue after using 100 msec
+process 1082 dispatched
+process 1082 terminated
+process 1076 dispatched
+process 1076 waiting
+process 1095 dispatched
+process 1083 added to ready queue after using 19 msec
+process 1095 added to ready queue after using 100 msec
+process 1094 dispatched
+process 1094 waiting
+process 1090 dispatched
+process 1090 terminated
+new process 1096 created
+process 1096 added to ready queue after using 0 msec
+process 1083 dispatched
+process 1083 waiting
+new process 1097 created
+process 1097 added to ready queue after using 0 msec
+process 1095 dispatched
+process 1095 added to ready queue after using 100 msec
+process 1096 dispatched
+process 1076 added to ready queue after using 43 msec
+process 1096 added to ready queue after using 100 msec
+process 1097 dispatched
+process 1097 waiting
+process 1095 dispatched
+process 1095 terminated
+new process 1098 created
+process 1098 added to ready queue after using 0 msec
+process 1076 dispatched
+process 1083 added to ready queue after using 16 msec
+process 1076 waiting
+process 1096 dispatched
+process 1094 added to ready queue after using 59 msec
+process 1096 added to ready queue after using 100 msec
+process 1098 dispatched
+process 1097 added to ready queue after using 18 msec
+process 1098 waiting
+process 1083 dispatched
+process 1083 waiting
+process 1094 dispatched
+process 1094 waiting
+new process 1099 created
+process 1099 added to ready queue after using 0 msec
+process 1096 dispatched
+process 1096 added to ready queue after using 100 msec
+process 1097 dispatched
+process 1076 added to ready queue after using 25 msec
+process 1097 waiting
+process 1099 dispatched
+process 1083 added to ready queue after using 11 msec
+process 1098 added to ready queue after using 10 msec
+process 1094 added to ready queue after using 41 msec
+process 1099 added to ready queue after using 100 msec
+process 1096 dispatched
+process 1096 added to ready queue after using 100 msec
+process 1076 dispatched
+process 1076 waiting
+process 1083 dispatched
+process 1083 terminated
+process 1098 dispatched
+process 1097 added to ready queue after using 58 msec
+process 1098 waiting
+process 1094 dispatched
+process 1094 waiting
+process 1099 dispatched
+process 1099 added to ready queue after using 100 msec
+process 1096 dispatched
+process 1076 added to ready queue after using 42 msec
+process 1096 terminated
+process 1097 dispatched
+process 1097 waiting
+new process 1100 created
+process 1100 added to ready queue after using 0 msec
+process 1099 dispatched
+process 1098 added to ready queue after using 56 msec
+process 1099 added to ready queue after using 100 msec
+process 1076 dispatched
+process 1076 waiting
+process 1100 dispatched
+process 1100 waiting
+new process 1101 created
+process 1101 added to ready queue after using 0 msec
+process 1098 dispatched
+process 1098 waiting
+new process 1102 created
+process 1102 added to ready queue after using 0 msec
+process 1099 dispatched
+process 1094 added to ready queue after using 35 msec
+process 1099 added to ready queue after using 100 msec
+process 1101 dispatched
+process 1097 added to ready queue after using 17 msec
+process 1101 waiting
+process 1102 dispatched
+process 1102 waiting
+process 1094 dispatched
+process 1094 waiting
+new process 1103 created
+process 1103 added to ready queue after using 0 msec
+process 1099 dispatched
+process 1098 added to ready queue after using 23 msec
+process 1076 added to ready queue after using 38 msec
+process 1099 added to ready queue after using 100 msec
+process 1097 dispatched
+process 1097 waiting
+process 1103 dispatched
+process 1103 waiting
+process 1098 dispatched
+process 1100 added to ready queue after using 22 msec
+process 1098 waiting
+process 1076 dispatched
+process 1102 added to ready queue after using 16 msec
+process 1076 waiting
+process 1099 dispatched
+process 1094 added to ready queue after using 15 msec
+process 1101 added to ready queue after using 34 msec
+process 1099 added to ready queue after using 100 msec
+process 1100 dispatched
+process 1098 added to ready queue after using 14 msec
+process 1097 added to ready queue after using 42 msec
+process 1100 waiting
+process 1102 dispatched
+process 1076 added to ready queue after using 24 msec
+process 1102 waiting
+process 1094 dispatched
+process 1103 added to ready queue after using 10 msec
+process 1094 waiting
+process 1101 dispatched
+process 1101 waiting
+process 1099 dispatched
+process 1102 added to ready queue after using 59 msec
+process 1099 added to ready queue after using 100 msec
+process 1098 dispatched
+process 1098 waiting
+process 1097 dispatched
+process 1097 waiting
+process 1076 dispatched
+process 1076 waiting
+process 1103 dispatched
+process 1100 added to ready queue after using 50 msec
+process 1103 waiting
+process 1102 dispatched
+process 1098 added to ready queue after using 44 msec
+process 1102 waiting
+process 1099 dispatched
+process 1094 added to ready queue after using 47 msec
+process 1103 added to ready queue after using 30 msec
+process 1101 added to ready queue after using 44 msec
+process 1099 added to ready queue after using 100 msec
+process 1100 dispatched
+process 1097 added to ready queue after using 47 msec
+process 1102 added to ready queue after using 39 msec
+process 1100 waiting
+process 1098 dispatched
+process 1098 waiting
+process 1094 dispatched
+process 1094 waiting
+process 1103 dispatched
+process 1076 added to ready queue after using 11 msec
+process 1103 waiting
+process 1101 dispatched
+process 1101 waiting
+process 1099 dispatched
+process 1098 added to ready queue after using 14 msec
+process 1100 added to ready queue after using 48 msec
+process 1103 added to ready queue after using 28 msec
+process 1099 added to ready queue after using 100 msec
+process 1097 dispatched
+process 1097 waiting
+process 1102 dispatched
+process 1102 waiting
+process 1076 dispatched
+process 1094 added to ready queue after using 30 msec
+process 1076 waiting
+process 1098 dispatched
+process 1098 waiting
+process 1100 dispatched
+process 1100 waiting
+process 1103 dispatched
+process 1103 waiting
+new process 1104 created
+process 1104 added to ready queue after using 0 msec
+process 1099 dispatched
+process 1101 added to ready queue after using 20 msec
+process 1102 added to ready queue after using 38 msec
+process 1100 added to ready queue after using 30 msec
+process 1099 added to ready queue after using 100 msec
+process 1094 dispatched
+process 1103 added to ready queue after using 44 msec
+process 1094 terminated
+process 1104 dispatched
+process 1097 added to ready queue after using 12 msec
+process 1104 waiting
+process 1101 dispatched
+process 1098 added to ready queue after using 18 msec
+process 1101 waiting
+process 1102 dispatched
+process 1102 terminated
+process 1100 dispatched
+process 1100 waiting
+process 1099 dispatched
+process 1076 added to ready queue after using 39 msec
+process 1101 added to ready queue after using 26 msec
+process 1099 added to ready queue after using 100 msec
+process 1103 dispatched
+process 1103 waiting
+process 1097 dispatched
+process 1100 added to ready queue after using 30 msec
+process 1097 waiting
+process 1098 dispatched
+process 1098 waiting
+process 1076 dispatched
+process 1076 waiting
+process 1101 dispatched
+process 1104 added to ready queue after using 46 msec
+process 1101 waiting
+process 1099 dispatched
+process 1099 added to ready queue after using 100 msec
+process 1100 dispatched
+process 1100 waiting
+new process 1105 created
+process 1105 added to ready queue after using 0 msec
+process 1104 dispatched
+process 1104 waiting
+new process 1106 created
+process 1106 added to ready queue after using 0 msec
+process 1099 dispatched
+process 1103 added to ready queue after using 24 msec
+process 1101 added to ready queue after using 20 msec
+process 1099 added to ready queue after using 100 msec
+process 1105 dispatched
+process 1098 added to ready queue after using 21 msec
+process 1097 added to ready queue after using 13 msec
+process 1076 added to ready queue after using 41 msec
+process 1105 added to ready queue after using 100 msec
+process 1106 dispatched
+process 1100 added to ready queue after using 13 msec
+process 1104 added to ready queue after using 37 msec
+process 1106 waiting
+process 1103 dispatched
+process 1103 terminated
+process 1101 dispatched
+process 1101 waiting
+process 1099 dispatched
+process 1099 added to ready queue after using 100 msec
+process 1098 dispatched
+process 1098 waiting
+process 1097 dispatched
+process 1097 waiting
+process 1076 dispatched
+process 1076 waiting
+process 1105 dispatched
+process 1098 added to ready queue after using 56 msec
+process 1106 added to ready queue after using 38 msec
+process 1105 added to ready queue after using 100 msec
+process 1100 dispatched
+process 1101 added to ready queue after using 15 msec
+process 1100 waiting
+process 1104 dispatched
+process 1104 waiting
+process 1099 dispatched
+process 1099 terminated
+process 1098 dispatched
+process 1098 waiting
+process 1106 dispatched
+process 1104 added to ready queue after using 34 msec
+process 1097 added to ready queue after using 21 msec
+process 1106 waiting
+process 1105 dispatched
+process 1076 added to ready queue after using 25 msec
+process 1105 terminated
+process 1101 dispatched
+process 1101 waiting
+process 1104 dispatched
+process 1104 waiting
+new process 1107 created
+process 1107 added to ready queue after using 0 msec
+process 1097 dispatched
+process 1097 waiting
+new process 1108 created
+process 1108 added to ready queue after using 0 msec
+process 1076 dispatched
+process 1076 waiting
+new process 1109 created
+process 1109 added to ready queue after using 0 msec
+process 1107 dispatched
+process 1107 waiting
+new process 1110 created
+process 1110 added to ready queue after using 0 msec
+process 1108 dispatched
+process 1100 added to ready queue after using 59 msec
+process 1108 waiting
+process 1109 dispatched
+process 1109 waiting
+new process 1111 created
+process 1111 added to ready queue after using 0 msec
+process 1110 dispatched
+process 1106 added to ready queue after using 52 msec
+process 1076 added to ready queue after using 31 msec
+process 1098 added to ready queue after using 19 msec
+process 1104 added to ready queue after using 38 msec
+process 1110 added to ready queue after using 100 msec
+process 1100 dispatched
+process 1100 waiting
+process 1111 dispatched
+process 1108 added to ready queue after using 14 msec
+process 1101 added to ready queue after using 13 msec
+process 1109 added to ready queue after using 23 msec
+process 1111 added to ready queue after using 100 msec
+process 1106 dispatched
+process 1106 waiting
+process 1076 dispatched
+process 1097 added to ready queue after using 14 msec
+process 1107 added to ready queue after using 19 msec
+process 1076 waiting
+process 1098 dispatched
+process 1098 waiting
+process 1104 dispatched
+process 1104 waiting
+process 1110 dispatched
+process 1106 added to ready queue after using 11 msec
+process 1110 terminated
+process 1108 dispatched
+process 1108 waiting
+process 1101 dispatched
+process 1100 added to ready queue after using 33 msec
+process 1101 waiting
+process 1109 dispatched
+process 1109 waiting
+process 1111 dispatched
+process 1104 added to ready queue after using 32 msec
+process 1076 added to ready queue after using 54 msec
+process 1111 added to ready queue after using 100 msec
+process 1097 dispatched
+process 1097 waiting
+process 1107 dispatched
+process 1109 added to ready queue after using 30 msec
+process 1107 waiting
+process 1106 dispatched
+process 1098 added to ready queue after using 18 msec
+process 1106 terminated
+process 1100 dispatched
+process 1108 added to ready queue after using 39 msec
+process 1100 waiting
+process 1104 dispatched
+process 1097 added to ready queue after using 32 msec
+process 1104 waiting
+process 1076 dispatched
+process 1107 added to ready queue after using 34 msec
+process 1076 waiting
+process 1111 dispatched
+process 1111 terminated
+process 1109 dispatched
+process 1101 added to ready queue after using 20 msec
+process 1109 terminated
+process 1098 dispatched
+process 1098 waiting
+process 1108 dispatched
+process 1100 added to ready queue after using 39 msec
+process 1108 waiting
+process 1097 dispatched
+process 1097 waiting
+process 1107 dispatched
+process 1076 added to ready queue after using 34 msec
+process 1104 added to ready queue after using 33 msec
+process 1098 added to ready queue after using 38 msec
+process 1107 waiting
+process 1101 dispatched
+process 1101 waiting
+process 1100 dispatched
+process 1100 waiting
+process 1076 dispatched
+process 1108 added to ready queue after using 59 msec
+process 1076 waiting
+process 1104 dispatched
+process 1104 waiting
+new process 1112 created
+process 1112 added to ready queue after using 0 msec
+process 1098 dispatched
+process 1098 terminated
+new process 1113 created
+process 1113 added to ready queue after using 0 msec
+process 1108 dispatched
+process 1108 waiting
+new process 1114 created
+process 1114 added to ready queue after using 0 msec
+process 1112 dispatched
+process 1101 added to ready queue after using 54 msec
+process 1112 added to ready queue after using 100 msec
+process 1113 dispatched
+process 1097 added to ready queue after using 18 msec
+process 1100 added to ready queue after using 53 msec
+process 1107 added to ready queue after using 45 msec
+process 1076 added to ready queue after using 44 msec
+process 1104 added to ready queue after using 15 msec
+process 1113 added to ready queue after using 100 msec
+process 1114 dispatched
+process 1114 waiting
+process 1101 dispatched
+process 1101 waiting
+process 1112 dispatched
+process 1114 added to ready queue after using 46 msec
+process 1112 added to ready queue after using 100 msec
+process 1097 dispatched
+process 1108 added to ready queue after using 15 msec
+process 1097 waiting
+process 1100 dispatched
+process 1100 waiting
+process 1107 dispatched
+process 1101 added to ready queue after using 31 msec
+process 1107 waiting
+process 1076 dispatched
+process 1076 waiting
+process 1104 dispatched
+process 1100 added to ready queue after using 58 msec
+process 1104 waiting
+process 1113 dispatched
+process 1113 added to ready queue after using 100 msec
+process 1114 dispatched
+process 1114 waiting
+process 1112 dispatched
+process 1097 added to ready queue after using 53 msec
+process 1104 added to ready queue after using 56 msec
+process 1112 added to ready queue after using 100 msec
+process 1108 dispatched
+process 1108 waiting
+process 1101 dispatched
+process 1101 terminated
+process 1100 dispatched
+process 1100 waiting
+process 1113 dispatched
+process 1107 added to ready queue after using 59 msec
+process 1076 added to ready queue after using 23 msec
+process 1113 added to ready queue after using 100 msec
+process 1097 dispatched
+process 1097 waiting
+process 1104 dispatched
+process 1104 terminated
+process 1112 dispatched
+process 1114 added to ready queue after using 15 msec
+process 1112 terminated
+process 1107 dispatched
+process 1108 added to ready queue after using 10 msec
+process 1107 waiting
+process 1076 dispatched
+process 1076 waiting
+process 1113 dispatched
+process 1100 added to ready queue after using 43 msec
+process 1113 terminated
+process 1114 dispatched
+process 1114 waiting
+new process 1115 created
+process 1115 added to ready queue after using 0 msec
+process 1108 dispatched
+process 1097 added to ready queue after using 52 msec
+process 1108 waiting
+process 1100 dispatched
+process 1100 waiting
+new process 1116 created
+process 1116 added to ready queue after using 0 msec
+process 1115 dispatched
+process 1114 added to ready queue after using 16 msec
+process 1115 added to ready queue after using 100 msec
+process 1097 dispatched
+process 1107 added to ready queue after using 27 msec
+process 1097 waiting
+process 1116 dispatched
+process 1100 added to ready queue after using 34 msec
+process 1076 added to ready queue after using 48 msec
+process 1116 waiting
+process 1114 dispatched
+process 1114 waiting
+process 1115 dispatched
+process 1108 added to ready queue after using 44 msec
+process 1115 added to ready queue after using 100 msec
+process 1107 dispatched
+process 1107 waiting
+process 1100 dispatched
+process 1097 added to ready queue after using 40 msec
+process 1100 terminated
+process 1076 dispatched
+process 1076 terminated
+process 1108 dispatched
+process 1108 terminated
+new process 1117 created
+process 1117 added to ready queue after using 0 msec
+process 1115 dispatched
+process 1115 added to ready queue after using 100 msec
+process 1097 dispatched
+process 1116 added to ready queue after using 17 msec
+process 1097 waiting
+process 1117 dispatched
+process 1117 waiting
+new process 1118 created
+process 1118 added to ready queue after using 0 msec
+process 1115 dispatched
+process 1114 added to ready queue after using 50 msec
+process 1115 added to ready queue after using 100 msec
+process 1116 dispatched
+process 1097 added to ready queue after using 23 msec
+process 1116 waiting
+process 1118 dispatched
+process 1107 added to ready queue after using 53 msec
+process 1118 added to ready queue after using 100 msec
+process 1114 dispatched
+process 1116 added to ready queue after using 37 msec
+process 1114 waiting
+process 1115 dispatched
+process 1117 added to ready queue after using 20 msec
+process 1115 added to ready queue after using 100 msec
+process 1097 dispatched
+process 1097 waiting
+process 1107 dispatched
+process 1107 terminated
+process 1118 dispatched
+process 1118 terminated
+process 1116 dispatched
+process 1116 waiting
+new process 1119 created
+process 1119 added to ready queue after using 0 msec
+process 1117 dispatched
+process 1117 waiting
+new process 1120 created
+process 1120 added to ready queue after using 0 msec
+process 1115 dispatched
+process 1114 added to ready queue after using 32 msec
+process 1115 terminated
+process 1119 dispatched
+process 1119 waiting
+new process 1121 created
+process 1121 added to ready queue after using 0 msec
+process 1120 dispatched
+process 1120 waiting
+new process 1122 created
+process 1122 added to ready queue after using 0 msec
+process 1114 dispatched
+process 1097 added to ready queue after using 19 msec
+process 1114 waiting
+process 1121 dispatched
+process 1116 added to ready queue after using 56 msec
+process 1121 added to ready queue after using 100 msec
